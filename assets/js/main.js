@@ -181,6 +181,19 @@
     });
 
     /* ------------------------------------------------------------------
+       Experiência: só um cargo aberto por vez
+       ------------------------------------------------------------------ */
+    var jobs = $$(".job");
+    jobs.forEach(function (job) {
+        job.addEventListener("toggle", function () {
+            if (!job.open) return;
+            jobs.forEach(function (other) {
+                if (other !== job && other.open) other.open = false;
+            });
+        });
+    });
+
+    /* ------------------------------------------------------------------
        Ver mais / Recolher (formação e certificações)
        ------------------------------------------------------------------ */
     var seeMore = $(".see-more");
