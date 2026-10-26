@@ -1,141 +1,771 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-theme="dark">
 <head>
-    <title>Pattrick Nunes | Portfólio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-        @import "tailwindcss";
-
-        @theme {
-            --font-montserrat: "Montserrat", sans-serif;
-            --font-outfit: "Outfit", sans-serif;
-            --font-dm-serif-display: "DM Serif Display", serif;
-            --color-artic: #E6EDF0;
-            --color-artic-blue: #245269;
-            --color-artic-blue-middle: #124A66;
-            --color-artic-blue-dark: #0B2D3E;
-            --color-artic-blue-white: #4B7B93;
-            --color-artic-blue-ultra-dark: #002233;
-            --color-artic-dark: #00151F;
-        }
-
-    </style>
+    <title>Pattrick Nunes | Help Desk &amp; Desenvolvimento</title>
+    <meta name="description" content="Portfólio de Pattrick Nunes — Analista de Help Desk N1 na Minsait, com foco em melhoria contínua, automação com ServiceNow e desenvolvimento backend (Java, C#, SQL).">
+    <meta name="author" content="Pattrick Nunes">
+    <meta name="theme-color" content="#030b12">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pattrick Nunes | Help Desk &amp; Desenvolvimento">
+    <meta property="og:description" content="Analista de Help Desk N1 · Melhoria contínua e automação · ServiceNow · CSAT 95%+">
+    <meta property="og:url" content="https://pattrickn0.github.io/Pattrick-Portfolio/">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('pn-theme');
+                if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
 </head>
-<body class="bg-linear-to-b from-artic to-white">
-    <nav class="flex flex-row min-h-[75px] items-center justify-between bg-linear-to-t from-artic-blue from-40% to-artic-blue-middle to-96% px-[8vw] max-xl:px-[6vw] max-md:px-[2vw] shadow-lg">
-        <button class="font-outfit text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl text-artic hover:text-shadow-2xs hover:text-shadow-cyan-600 hover:scale-110">PATTRICK NUNES</button>
-        <a><img src="./src/assets/icons/menu.svg" class="hidden h-[50px] max-md:block invert"></a>
-        <ul class="flex font-outfit gap-[40px] text-artic text-xl max-xl:text-base max-lg:text-sm max-lg:flex max-md:hidden">
-            <a href="#about"><li class="bg-artic-blue-dark px-[20px] py-[1vh] rounded-[8px] shadow-ml hover:px-[25px] hover:border hover:border-solid hover:border-artic">ABOUT ME</li></a>
-            <a href=""><li class="bg-artic-blue-dark px-[20px] py-[1vh] rounded-[8px] hover:px-[23px] hover:border hover:border-solid hover:border-artic">PROJECTS</li></a>
-            <a href="#contacts"><li class="bg-artic-blue-dark px-[20px] py-[1vh] rounded-[8px] hover:px-[23px] hover:border hover:border-solid hover:border-artic">CONTACT</li></a>
-            <a href="index-pt_br.html"><img src="./src/assets/flags/usa_flag.webp" class="h-[45px] w-[45px] max-xl:h-[40px] max-xl:w-[40px] max-lg:h-[37px] max-lg:w-[37px] rounded-[50%] object-cover border border-solid border-artic hover:border-yellow-400 hover:rounded-[35%]"></a>
-        </ul>
-    </nav>
-    <section class="flex h-auto flex-col min-h-[400px] max-lg:min-h-[350px] max-sm:min-h-[285px] justify-center items-center px-[8vw] max-xl:px-[6vw] max-md:px-[2vw]">
-        <h1 class="text-8xl font-outfit font-bold max-2xl:text-[85px] max-xl:text-[70px] max-lg:text-[59px] max-md:text-[49px] max-sm:text-[7vw] text-artic-dark">FRONT-END DEVELOPER</h1>
-        <p class="text-[40px] text-center font-montserrat font-bold text-balance max-2xl:text-[36px] max-xl:text-[28px] max-lg:text-[25px] max-md:text-[20px] max-sm:text-[3vw] max-lg:text-center text-artic-dark">Enthusiast in technology and development.</p>
-    </section>
-    <div class="space-between mb-[10vh] max-lg:mb-[5vh] px-[7vw] max-xl:px-[5vw] max-md:px-[2vw]">
-        <section class="flex flex-col h-[125px] items-space-between mx-3">
-            <h1 class="font-outfit text-3xl mb-[3vh] font-bold self-center max-2xl:text-[26px] max-xl:text-[24px] max-lg:text-[22px] max-sm:text-[18px] text-artic-dark">LANGUAGES & FRAMEWORK</h1>
-            <div class="flex flex-row">
-                <div class="flex flex-row mx-[5px] pr-2 max-md:pr-[0px] w-[100%] items-center bg-linear-60 from-artic-blue to-artic-blue-dark rounded-[8px] ">
-                    <img src="./src/assets/icons/language-java.svg" class="h-15 max-xl:h-12 px-[1vh] w-auto fill-artic-blue-ultra-dark invert"></img>
-                    <p class="font-montserrat pt-[5px] font-bold text-artic max-2xl:text-sm max-lg:text-xs max-lg:block max-md:hidden">JAVA</p>
-                </div>
-                <div class="flex flex-row mx-[5px] pr-2 max-md:pr-[0px] w-[100%] items-center bg-linear-60 from-artic-blue to-artic-blue-dark rounded rounded-[8px]">
-                    <img src="./src/assets/icons/language-html5.svg" class="h-15 max-xl:h-12 px-[1vh] w-auto invert"></img>
-                    <p class="font-montserrat pt-[5px] font-bold text-artic max-2xl:text-sm max-lg:text-xs max-lg:block max-md:hidden">HTML</p>
-                </div>
-                <div class="flex flex-row mx-[5px] w-[100%] max-md:pr-[0px] items-center bg-linear-60 from-artic-blue to-artic-blue-dark rounded rounded-[8px]">
-                    <img src="./src/assets/icons/language-css.svg" class="h-15 max-xl:h-12 px-[1vh] w-auto invert"></img>
-                    <p class="font-montserrat pt-[5px] font-bold text-artic max-2xl:text-sm max-lg:text-xs max-lg:block max-md:hidden">CSS</p>
-                </div>
-                <div class="flex flex-row mx-[5px] pr-2 max-md:pr-[0px] w-[100%] items-center bg-linear-60 from-artic-blue to-artic-blue-dark rounded rounded-[8px]">
-                    <img src="./src/assets/icons/tailwind.svg" class="h-15 max-xl:h-12 px-[1vh] w-auto invert"></img>
-                    <p class="font-montserrat pt-[5px] font-bold text-artic max-2xl:text-sm max-lg:text-xs max-lg:block max-md:hidden">Tailwind</p>
-                </div>
-                <div class="flex flex-row mx-[5px] pr-2 max-md:pr-[0px] w-[100%] items-center bg-linear-60 from-artic-blue to-artic-blue-dark rounded rounded-[8px]">
-                    <img src="./src/assets/icons/mysql.svg" class="h-15 max-xl:h-12 px-[1vh] w-auto invert"></img>
-                    <p class="font-montserrat pt-[5px] font-bold text-artic max-2xl:text-sm max-lg:text-xs max-lg:block max-md:hidden">MySQL</p>
-                </div>
-            </div>
-        </section>
+<body>
+    <!-- Ícones de interface (estilo Lucide) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+            <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+            <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+            <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+            <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+            <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+            <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+            <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+            <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+            <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+            <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+            <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+            <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></symbol>
+            <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+            <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+            <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></symbol>
+            <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+            <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+            <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+            <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+            <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+            <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+            <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+            <symbol id="i-dashboard" viewBox="0 0 24 24"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></symbol>
+            <symbol id="i-wand" viewBox="0 0 24 24"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z"/><path d="m14 7 3 3M5 6v4M19 14v4M10 2v2M7 8H3M21 16h-4M11 3H9"/></symbol>
+            <symbol id="i-phone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+            <symbol id="i-list" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4M3 7l2 2 4-4M13 6h8M13 12h8M13 18h8"/></symbol>
+            <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+            <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+            <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+            <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+            <symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+            <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+            <symbol id="i-present" viewBox="0 0 24 24"><path d="M2 3h20M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3M7 21l5-5 5 5"/></symbol>
+            <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 17v2M13 11v2"/></symbol>
+            <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+            <symbol id="i-speaker" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><circle cx="12" cy="14" r="4"/><path d="M12 6h.01"/></symbol>
+            <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7l10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+            <symbol id="i-bug" viewBox="0 0 24 24"><rect width="8" height="14" x="8" y="6" rx="4"/><path d="m19 7-3 2M5 7l3 2M19 19l-3-2M5 19l3-2M20 13h-4M4 13h4M10 4l1 2M14 4l-1 2"/></symbol>
+        </defs>
+    </svg>
+
+    <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <!-- Fundo animado (aurora + grid + ruído) -->
+    <div class="backdrop" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise"></div>
     </div>
-    <div class="grid grid-cols-2 h-auto grow pb-[15px] bg-linear-160 from-artic-blue to-artic-blue-dark max-lg:grid-cols-1">
-        <section id="about" class="flex flex-col items-center pl-[8vw] max-xl:pl-[5vw] max-xl:pr-[3vw] max-lg:pr-[8vw] max-md:px-[2vw]">
-            <h1 class="text-artic text-6xl pt-[4vh] font-outfit font-bold text-stone-200 max-2xl:text-5xl max-xl:text-4xl max-lg:text-3xl max-md:text-2xl">ABOUT ME</h1>
-            <p1 class="font-montserrat text-[22px] text-neutral-300 p-[2vh] text-justify max-2xl:text-[20px] max-xl:text-lg max-lg:text-base max-md:text-sm max-sm:text-xs max-md:px-[2vw]">
-                I'm a Backend Developer with academic experience in Java, a solid foundation in object-oriented programming, 
-                SOLID principles, relational databases (MySQL), and version control with Git. I'm currently expanding my skills 
-                into Frontend development, with proficiency in HTML and a focus on learning CSS, followed by JavaScript.
-            </p1>
-            <p class="font-montserrat text-[22px] text-neutral-300 p-[2vh] mb-[1vh] text-justify max-2xl:text-[20px] max-xl:text-lg max-lg:text-base max-md:text-sm max-sm:text-xs max-md:px-[2vw]"> 
-                My goal is to work as a Full Stack Developer, combining robust backend logic with efficient user interfaces.
-            </p>
+
+    <header class="nav-wrap">
+        <nav class="nav glass" aria-label="Principal">
+            <a href="#home" class="brand" aria-label="Pattrick Nunes — início">
+                <span class="brand-mark">PN</span>
+                <span class="brand-name">Pattrick Nunes</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#impact" data-i18n="nav.impact">Resultados</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experiência</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Competências</a></li>
+                <li><a href="#education" data-i18n="nav.education">Formação</a></li>
+                <li class="nav-cta-mobile"><a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav.contact">Contato</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="lang-switch" role="group" aria-label="Idioma / Language">
+                    <button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+                <button type="button" class="icon-btn theme-toggle" aria-label="Alternar tema" data-i18n-attr="aria-label:a11y.theme">
+                    <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+                    <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="nav.contact">Contato</a>
+                <button type="button" class="icon-btn menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:a11y.menu">
+                    <svg class="icon icon-open"><use href="#i-menu"/></svg>
+                    <svg class="icon icon-close"><use href="#i-x"/></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section id="home" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="pill reveal">
+                        <span class="dot dot-live"></span>
+                        <span data-i18n="hero.badge">Analista de Help Desk N1 na Minsait</span>
+                    </span>
+                    <h1 class="hero-title reveal">
+                        <span class="hero-hello" data-i18n="hero.hello">Olá, eu sou</span>
+                        <span class="gradient-text">Pattrick Nunes</span>
+                    </h1>
+                    <p class="hero-typing reveal" aria-live="polite">
+                        <span class="mono prompt">&gt;</span>
+                        <span data-i18n="hero.focus">Foco em</span>
+                        <span class="typed" id="typed">resolução no primeiro contato</span><span class="caret" aria-hidden="true"></span>
+                    </p>
+                    <p class="hero-lead reveal" data-i18n="hero.lead">
+                        Estudante de Sistemas da Informação no IFF, com formação técnica em Informática e experiência prática em suporte técnico, manutenção de computadores e implantação de sistemas. Hoje uno atendimento de excelência a dashboards, macros e automações — enquanto evoluo em desenvolvimento backend com Java, C# e SQL.
+                    </p>
+                    <div class="hero-ctas reveal">
+                        <a href="#contact" class="btn btn-primary">
+                            <span data-i18n="hero.cta1">Vamos conversar</span>
+                            <svg class="icon"><use href="#i-arrow-right"/></svg>
+                        </a>
+                        <a href="#experience" class="btn btn-ghost" data-i18n="hero.cta2">Ver experiência</a>
+                    </div>
+                    <ul class="hero-socials reveal" aria-label="Redes">
+                        <li><a class="icon-btn" href="https://www.linkedin.com/in/pattrick-nunes" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a></li>
+                        <li><a class="icon-btn" href="https://github.com/pattrickn0" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a></li>
+                        <li><a class="icon-btn" href="mailto:pattrickn0@gmail.com" aria-label="E-mail"><svg class="icon"><use href="#i-mail"/></svg></a></li>
+                        <li class="hero-location"><svg class="icon"><use href="#i-pin"/></svg> Campos dos Goytacazes, RJ</li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="float-chip chip-a glass"><img src="./assets/icons/tech/java.svg" alt="" width="20" height="20"> Java</div>
+                    <div class="float-chip chip-b glass"><img src="./assets/icons/tech/csharp.svg" alt="" width="20" height="20"> C#</div>
+                    <div class="float-chip chip-c glass"><img src="./assets/icons/tech/mysql.svg" alt="" width="20" height="20"> SQL</div>
+                    <div class="float-chip chip-d glass"><svg class="icon"><use href="#i-dashboard"/></svg> ServiceNow</div>
+
+                    <article class="ticket glass glass-strong tilt" aria-label="Cartão de chamado ilustrativo" data-i18n-attr="aria-label:ticket.aria">
+                        <header class="ticket-head">
+                            <span class="win-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                            <span class="mono ticket-id">INC-PN-2026</span>
+                            <span class="status status-ok"><svg class="icon"><use href="#i-check"/></svg> <span data-i18n="ticket.resolved">Resolvido</span></span>
+                        </header>
+                        <div class="ticket-body">
+                            <div class="ticket-profile">
+                                <div class="avatar"><span>PN</span></div>
+                                <div>
+                                    <p class="ticket-name">Pattrick Nunes</p>
+                                    <p class="ticket-role" data-i18n="ticket.role">Analista Help Desk N1</p>
+                                </div>
+                            </div>
+                            <dl class="ticket-fields">
+                                <div><dt data-i18n="ticket.requester">Solicitante</dt><dd data-i18n="ticket.requesterVal">Você, recrutador(a)</dd></div>
+                                <div><dt data-i18n="ticket.category">Categoria</dt><dd data-i18n="ticket.categoryVal">Nova contratação</dd></div>
+                                <div><dt data-i18n="ticket.priority">Prioridade</dt><dd><span class="prio" data-i18n="ticket.priorityVal">Alta</span></dd></div>
+                                <div><dt data-i18n="ticket.sla">SLA</dt><dd data-i18n="ticket.slaVal">1º contato</dd></div>
+                            </dl>
+                            <div class="ticket-csat">
+                                <div class="gauge" style="--value:95">
+                                    <svg viewBox="0 0 120 120" aria-hidden="true">
+                                        <defs>
+                                            <linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="1">
+                                                <stop offset="0" stop-color="#38bdf8"/>
+                                                <stop offset="1" stop-color="#2dd4bf"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle class="gauge-track" cx="60" cy="60" r="50"/>
+                                        <circle class="gauge-fill" cx="60" cy="60" r="50" pathLength="100"/>
+                                    </svg>
+                                    <div class="gauge-label"><strong>95%+</strong><span>CSAT</span></div>
+                                </div>
+                                <div class="ticket-csat-text">
+                                    <div class="stars" aria-label="5 estrelas" data-i18n-attr="aria-label:ticket.stars">
+                                        <svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg>
+                                    </div>
+                                    <p data-i18n="ticket.csatText">Satisfação acima de 95% em todos os meses, com meses de 100%.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <a href="#about" class="scroll-hint" aria-label="Rolar para baixo" data-i18n-attr="aria-label:a11y.scroll"><span></span></a>
         </section>
-        <section class="flex flex-col items-center justify-between mt-[2vh] max-lg:mb-[0px] glow bg-artic-blue-ultra-dark rounded-[8px] mx-[8vw] max-xl:ml-[3vw] max-2xl:mx-[7vw] max-xl:mx-[5vw]">
-            <h1 class="text-6xl pt-[2vh] font-outfit font-bold text-artic max-2xl:text-5xl max-xl:text-4xl max-lg:mb-3 max-lg:text-3xl max-md:text-2xl">EXPERIENCE</h1>
-            <div
-                class="flex flex-col justify-center min-w-[95%] p-2 max-lg:mb-3 rounded-[8px] bg-artic border border-solid border-zinc-200 shadow-xs text-artic-blue-ultra-dark">
-                <h1 class="font-outfit text-3xl font-bold px-[5px] max-2xl:text-2xl max-xl:text-lg">IT Technician</h1>
-                <p class="font-montserrat text-xl px-[5px] max-2xl:text-lg max-xl:text-md max-lg:text-base max-md:text-sm max-sm:text-xs">Lider Brasil Informática | Aug/2024 - Active</p>
-            </div>
-            <div
-                class="flex flex-col justify-center min-w-[95%] p-2 max-lg:mb-3 rounded-[8px] bg-artic border border-solid border-zinc-200 shadow-xs text-artic-blue-ultra-dark">
-                <h1 class="font-outfit text-3xl font-bold px-[5px] max-2xl:text-2xl max-xl:text-lg">Technical Support Intern</h1>
-                <p class="font-montserrat text-xl px-[5px] max-2xl:text-lg max-xl:text-md max-lg:text-base max-md:text-sm max-sm:text-xs">Dam Soluções | Sep/2023 to Jul/2024</p>
-            </div>
-            <div
-                class="flex flex-col justify-center min-w-[95%] p-2 max-lg:mb-3 rounded-[8px] bg-artic mb-[15px] max-lg:mb-[2vh] border border-solid border-zinc-200 shadow-xs text-artic-blue-ultra-dark">
-                <h1 class="font-outfit text-3xl font-bold px-[5px] max-2xl:text-2xl max-xl:text-lg">Student Assistant in Multimedia</h1>
-                <p class="font-montserrat text-xl px-[5px] max-2xl:text-lg max-xl:text-md max-lg:text-base max-md:text-sm max-sm:text-xs">IFF - Campus Centro | Mar/2023 to Sep/2023</p>
+
+        <!-- SOBRE -->
+        <section id="about" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="eyebrow mono">01 · <span data-i18n="about.eyebrow">sobre mim</span></span>
+                    <h2 data-i18n="about.title">Do suporte ao código</h2>
+                </header>
+                <div class="about-grid">
+                    <article class="glass card about-main reveal">
+                        <p data-i18n="about.p1">Sou estudante de <strong>Bacharelado em Sistemas da Informação</strong> no IFF, com formação técnica em Informática e experiência prática em suporte técnico, manutenção de computadores e implantação de sistemas.</p>
+                        <p data-i18n="about.p2">Atuei em estágios e bolsas envolvendo atendimento, diagnóstico de problemas, treinamentos e organização de eventos. Hoje, na Minsait, mantenho <strong>CSAT acima de 95%</strong> e crio dashboards e macros no ServiceNow para tornar a operação mais ágil.</p>
+                        <p data-i18n="about.p3">Atualmente estou me aperfeiçoando em desenvolvimento de software, com foco em <strong>backend (Java, C#, SQL)</strong> e iniciando no <strong>frontend (HTML, CSS e React)</strong>.</p>
+                        <div class="about-meta">
+                            <span class="tag"><svg class="icon"><use href="#i-pin"/></svg> Campos dos Goytacazes, RJ</span>
+                            <span class="tag"><svg class="icon"><use href="#i-grad"/></svg> <span data-i18n="about.tagEdu">SI · IFF · 2027</span></span>
+                            <span class="tag"><svg class="icon"><use href="#i-globe"/></svg> <span data-i18n="about.tagLang">Português · Inglês</span></span>
+                        </div>
+                    </article>
+                    <div class="about-focus">
+                        <article class="glass card focus-card reveal">
+                            <span class="icon-badge"><svg class="icon"><use href="#i-headset"/></svg></span>
+                            <div>
+                                <h3 data-i18n="about.f1t">Suporte &amp; atendimento</h3>
+                                <p data-i18n="about.f1d">Resolução no primeiro contato, diagnóstico de hardware e software e foco total na experiência do usuário.</p>
+                            </div>
+                        </article>
+                        <article class="glass card focus-card reveal">
+                            <span class="icon-badge"><svg class="icon"><use href="#i-zap"/></svg></span>
+                            <div>
+                                <h3 data-i18n="about.f2t">Melhoria contínua &amp; automação</h3>
+                                <p data-i18n="about.f2d">Dashboards, macros e apps low-code que padronizam processos e dão visibilidade aos indicadores da equipe.</p>
+                            </div>
+                        </article>
+                        <article class="glass card focus-card reveal">
+                            <span class="icon-badge"><svg class="icon"><use href="#i-code"/></svg></span>
+                            <div>
+                                <h3 data-i18n="about.f3t">Desenvolvimento de software</h3>
+                                <p data-i18n="about.f3d">Backend com Java, C# e SQL, base sólida em POO — e evoluindo no frontend com HTML, CSS e React.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
-    </div>
-    <section class="flex flex-col bg-artic items-center justify-center text-6xl min-h-[375px] max-xl:min-h-[325px] max-md:min-h-[275px]">
-        <h1 class="pb-[25px] font-outfit text-6xl font-bold max-2xl:text-5xl max-xl:text-4xl max-lg:text-3xl max-md:text-2xl text-artic-dark">MY ACADEMIC JOURNEY</h1>
-        <div class="flex flex-col items-center">
-            <div class="flex flex-col items-center text-artic-blue-ultra-dark">
-                <h2 class="font-outfit text-3xl font-bold max-2xl:text-2xl max-lg:text-xl max-md:text-lg">Bachelor of Information Systems</h2>
-                <em class="font-montserrat text-xl max-lg:text-base max-md:text-sm max-sm:text-xs ">IFF - Instituto Federal Fluminense | Jun/2022 - Now</em>
+
+        <!-- RESULTADOS -->
+        <section id="impact" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="eyebrow mono">02 · <span data-i18n="impact.eyebrow">resultados</span></span>
+                    <h2 data-i18n="impact.title">Números que falam por mim</h2>
+                    <p class="section-sub" data-i18n="impact.sub">Indicadores reais da minha atuação como Analista de Help Desk N1 na Minsait.</p>
+                </header>
+                <div class="stats-grid">
+                    <article class="glass card stat reveal">
+                        <span class="icon-badge"><svg class="icon"><use href="#i-star"/></svg></span>
+                        <p class="stat-value"><span data-count="95">0</span><small>%+</small></p>
+                        <h3 data-i18n="impact.s1t">CSAT mensal</h3>
+                        <p data-i18n="impact.s1d">Acima de 95% em todos os meses de atuação, com meses de 100% de satisfação.</p>
+                    </article>
+                    <article class="glass card stat reveal">
+                        <span class="icon-badge"><svg class="icon"><use href="#i-chat"/></svg></span>
+                        <p class="stat-value"><span data-count="100">0</span><small>+</small></p>
+                        <h3 data-i18n="impact.s2t">Pesquisas por mês</h3>
+                        <p data-i18n="impact.s2d">Média acima de 100 pesquisas de satisfação respondidas mensalmente.</p>
+                    </article>
+                    <article class="glass card stat reveal">
+                        <span class="icon-badge"><svg class="icon"><use href="#i-trophy"/></svg></span>
+                        <p class="stat-value"><small>Top</small> <span data-count="1">0</span></p>
+                        <h3 data-i18n="impact.s3t">Da operação</h3>
+                        <p data-i18n="impact.s3d">Primeiro lugar em volume de avaliações positivas durante um período.</p>
+                    </article>
+                    <article class="glass card stat reveal">
+                        <span class="icon-badge"><svg class="icon"><use href="#i-users"/></svg></span>
+                        <p class="stat-value"><span data-count="4">0</span><small>x</small></p>
+                        <h3 data-i18n="impact.s4t">Chats simultâneos</h3>
+                        <p data-i18n="impact.s4d">Atendimento de até 4 usuários ao mesmo tempo, sem perda de qualidade.</p>
+                    </article>
+                </div>
             </div>
+        </section>
+
+        <!-- EXPERIÊNCIA -->
+        <section id="experience" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="eyebrow mono">03 · <span data-i18n="exp.eyebrow">experiência</span></span>
+                    <h2 data-i18n="exp.title">Trajetória profissional</h2>
+                    <p class="section-sub" data-i18n="exp.sub">Mais de 3 anos resolvendo problemas reais — do audiovisual ao service desk corporativo.</p>
+                </header>
+
+                <ol class="timeline">
+                    <!-- Minsait -->
+                    <li class="timeline-item reveal">
+                        <span class="timeline-dot is-current" aria-hidden="true"></span>
+                        <article class="glass card job">
+                            <header class="job-head">
+                                <div class="job-logo" aria-hidden="true">M</div>
+                                <div class="job-title">
+                                    <h3 data-i18n="exp.j1.role">Analista Help Desk N1</h3>
+                                    <p class="job-company">Minsait <span class="badge-current" data-i18n="exp.current">Atual</span></p>
+                                </div>
+                                <div class="job-when">
+                                    <p class="mono"><svg class="icon"><use href="#i-calendar"/></svg> <span class="period" data-start="2025-10" data-end="">out 2025 — atual</span></p>
+                                    <p class="duration" data-start="2025-10" data-end=""></p>
+                                </div>
+                            </header>
+                            <p class="job-desc" data-i18n="exp.j1.desc">Atendimento de primeiro nível a usuários via chat e telefone, com foco em resolução no primeiro contato e experiência do usuário.</p>
+                            <div class="job-groups">
+                                <div class="job-group">
+                                    <h4><svg class="icon"><use href="#i-trophy"/></svg> <span data-i18n="exp.j1.g1">Resultados</span></h4>
+                                    <ul>
+                                        <li data-i18n="exp.j1.g1a">CSAT acima de 95% em todos os meses de atuação, com meses de 100% de satisfação</li>
+                                        <li data-i18n="exp.j1.g1b">Média acima de 100 pesquisas de satisfação respondidas por mês</li>
+                                        <li data-i18n="exp.j1.g1c">Top 1 da operação em volume de avaliações positivas durante um período</li>
+                                        <li data-i18n="exp.j1.g1d">Atendimento simultâneo de até 4 usuários no chat, sem perda de qualidade</li>
+                                    </ul>
+                                </div>
+                                <div class="job-group">
+                                    <h4><svg class="icon"><use href="#i-zap"/></svg> <span data-i18n="exp.j1.g2">Melhoria contínua e automação</span></h4>
+                                    <ul>
+                                        <li data-i18n="exp.j1.g2a">Criação de dashboards no ServiceNow para acompanhar filas, volume e indicadores da equipe</li>
+                                        <li data-i18n="exp.j1.g2b">Desenvolvimento de macros no ServiceNow que padronizam e agilizam respostas recorrentes</li>
+                                        <li data-i18n="exp.j1.g2c">Desenvolvimento de um aplicativo em Power Apps para apoiar a rotina da equipe (em andamento)</li>
+                                        <li data-i18n="exp.j1.g2d">Apoio na estruturação e gestão do fluxo de backlog</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="job-note"><svg class="icon"><use href="#i-ticket"/></svg> <span data-i18n-html="exp.j1.note">Antes, fui <strong>Ponto Único de Contato (SPOC)</strong> entre usuários e equipes resolvedoras: recebimento, triagem e encaminhamento de demandas, acompanhamento de prazos e comunicação com o usuário até o encerramento.</span></p>
+                            <ul class="tags" aria-label="Tecnologias">
+                                <li>ServiceNow</li><li>Power Apps</li><li>Dashboards</li><li>Macros</li><li>SPOC</li><li>Backlog</li>
+                            </ul>
+                        </article>
+                    </li>
+
+                    <!-- Líder Brasil -->
+                    <li class="timeline-item reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <article class="glass card job">
+                            <header class="job-head">
+                                <div class="job-logo" aria-hidden="true">LB</div>
+                                <div class="job-title">
+                                    <h3 data-i18n="exp.j2.role">Técnico de Informática</h3>
+                                    <p class="job-company">Líder Brasil Informática</p>
+                                </div>
+                                <div class="job-when">
+                                    <p class="mono"><svg class="icon"><use href="#i-calendar"/></svg> <span class="period" data-start="2024-08" data-end="2025-09">ago 2024 — set 2025</span></p>
+                                    <p class="duration" data-start="2024-08" data-end="2025-09"></p>
+                                </div>
+                            </header>
+                            <p class="job-desc" data-i18n="exp.j2.desc">Suporte técnico presencial e remoto para clientes, da manutenção de computadores à implantação de sistemas.</p>
+                            <div class="job-groups three">
+                                <div class="job-group">
+                                    <h4><svg class="icon"><use href="#i-wrench"/></svg> <span data-i18n="exp.j2.g1">Suporte e manutenção</span></h4>
+                                    <ul>
+                                        <li data-i18n="exp.j2.g1a">Montagem, manutenção e diagnóstico de problemas de hardware e software</li>
+                                        <li data-i18n="exp.j2.g1b">Formatação e configuração de computadores e periféricos</li>
+                                    </ul>
+                                </div>
+                                <div class="job-group">
+                                    <h4><svg class="icon"><use href="#i-database"/></svg> <span data-i18n="exp.j2.g2">Sistemas de gestão e ponto</span></h4>
+                                    <ul>
+                                        <li data-i18n="exp.j2.g2a">Suporte remoto a sistemas de PDV, gestão comercial e relógio de ponto</li>
+                                        <li data-i18n="exp.j2.g2b">Configuração de relatórios, ajuste de batidas, cálculo de horas e cadastro de usuários</li>
+                                    </ul>
+                                </div>
+                                <div class="job-group">
+                                    <h4><svg class="icon"><use href="#i-layers"/></svg> <span data-i18n="exp.j2.g3">Implantação</span></h4>
+                                    <ul>
+                                        <li data-i18n="exp.j2.g3a">Instalação e configuração de sistemas do zero em novos clientes</li>
+                                        <li data-i18n="exp.j2.g3b">Treinamento de usuários para o uso no dia a dia</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="tags" aria-label="Tecnologias">
+                                <li>Hardware</li><li>Software</li><li data-i18n="tag.pos">PDV</li><li data-i18n="tag.timeclock">Relógio de ponto</li><li data-i18n="tag.deploy">Implantação</li><li data-i18n="tag.training">Treinamento</li>
+                            </ul>
+                        </article>
+                    </li>
+
+                    <!-- DAM -->
+                    <li class="timeline-item reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <article class="glass card job">
+                            <header class="job-head">
+                                <div class="job-logo" aria-hidden="true">D</div>
+                                <div class="job-title">
+                                    <h3 data-i18n="exp.j3.role">Estagiário de Suporte TI</h3>
+                                    <p class="job-company">DAM Soluções</p>
+                                </div>
+                                <div class="job-when">
+                                    <p class="mono"><svg class="icon"><use href="#i-calendar"/></svg> <span class="period" data-start="2023-10" data-end="2024-07">out 2023 — jul 2024</span></p>
+                                    <p class="duration" data-start="2023-10" data-end="2024-07"></p>
+                                </div>
+                            </header>
+                            <p class="job-desc" data-i18n="exp.j3.desc">Suporte remoto e presencial a clientes de diversos segmentos que usam sistemas de PDV e gestão comercial.</p>
+                            <div class="job-groups three">
+                                <div class="job-group">
+                                    <h4><svg class="icon"><use href="#i-headset"/></svg> <span data-i18n="exp.j3.g1">Suporte</span></h4>
+                                    <ul>
+                                        <li data-i18n="exp.j3.g1a">Suporte remoto e presencial a clientes</li>
+                                        <li data-i18n="exp.j3.g1b">Diagnóstico e solução de problemas em PDV e sistemas de gestão</li>
+                                        <li data-i18n="exp.j3.g1c">Instalação de impressoras fiscais, leitores de código de barras e outros periféricos</li>
+                                        <li data-i18n="exp.j3.g1d">Ajustes de rede e crimpagem de cabos</li>
+                                    </ul>
+                                </div>
+                                <div class="job-group">
+                                    <h4><svg class="icon"><use href="#i-present"/></svg> <span data-i18n="exp.j3.g2">Implantação e treinamento</span></h4>
+                                    <ul>
+                                        <li data-i18n="exp.j3.g2a">Implantação de sistemas em novos estabelecimentos, da análise da infraestrutura à configuração final</li>
+                                        <li data-i18n="exp.j3.g2b">Treinamentos personalizados para os usuários</li>
+                                    </ul>
+                                </div>
+                                <div class="job-group">
+                                    <h4><svg class="icon"><use href="#i-bug"/></svg> <span data-i18n="exp.j3.g3">Melhoria do produto</span></h4>
+                                    <ul>
+                                        <li data-i18n="exp.j3.g3a">Registro de bugs e sugestões de melhoria para o time de desenvolvimento, e testes das correções</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="tags" aria-label="Tecnologias">
+                                <li data-i18n="tag.pos">PDV</li><li data-i18n="tag.erp">Gestão comercial</li><li data-i18n="tag.fiscal">Impressoras fiscais</li><li data-i18n="tag.network">Redes</li><li data-i18n="tag.qa">Testes</li>
+                            </ul>
+                        </article>
+                    </li>
+
+                    <!-- IFF -->
+                    <li class="timeline-item reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <article class="glass card job">
+                            <header class="job-head">
+                                <div class="job-logo" aria-hidden="true">IFF</div>
+                                <div class="job-title">
+                                    <h3 data-i18n="exp.j4.role">Bolsista de Multimídia</h3>
+                                    <p class="job-company">IFF — Instituto Federal Fluminense</p>
+                                </div>
+                                <div class="job-when">
+                                    <p class="mono"><svg class="icon"><use href="#i-calendar"/></svg> <span class="period" data-start="2023-03" data-end="2023-09">mar 2023 — set 2023</span></p>
+                                    <p class="duration" data-start="2023-03" data-end="2023-09"></p>
+                                </div>
+                            </header>
+                            <p class="job-desc" data-i18n="exp.j4.desc">Suporte audiovisual para alunos, professores e eventos do campus.</p>
+                            <div class="job-groups">
+                                <div class="job-group">
+                                    <h4><svg class="icon"><use href="#i-speaker"/></svg> <span data-i18n="exp.j4.g1">Atendimento</span></h4>
+                                    <ul>
+                                        <li data-i18n="exp.j4.g1a">Orientação e configuração para o uso de projetores, som e equipamentos de videoconferência</li>
+                                        <li data-i18n="exp.j4.g1b">Solução de problemas durante aulas, apresentações e reuniões</li>
+                                    </ul>
+                                </div>
+                                <div class="job-group">
+                                    <h4><svg class="icon"><use href="#i-users"/></svg> <span data-i18n="exp.j4.g2">Eventos</span></h4>
+                                    <ul>
+                                        <li data-i18n="exp.j4.g2a">Montagem e preparação de auditórios: som, projeção, iluminação e disposição do espaço</li>
+                                        <li data-i18n="exp.j4.g2b">Apoio na organização de palestras, seminários e workshops</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="tags" aria-label="Tecnologias">
+                                <li data-i18n="tag.av">Audiovisual</li><li data-i18n="tag.video">Videoconferência</li><li data-i18n="tag.events">Eventos</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- PROJETOS / INICIATIVAS -->
+        <section id="projects" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="eyebrow mono">04 · <span data-i18n="proj.eyebrow">projetos &amp; iniciativas</span></span>
+                    <h2 data-i18n="proj.title">O que venho construindo</h2>
+                    <p class="section-sub" data-i18n="proj.sub">Automação no dia a dia da operação e projetos de estudo em desenvolvimento.</p>
+                </header>
+                <div class="projects-grid">
+                    <article class="glass card project reveal">
+                        <div class="project-top">
+                            <span class="icon-badge"><svg class="icon"><use href="#i-dashboard"/></svg></span>
+                            <span class="status status-ok" data-i18n="proj.live">Em uso</span>
+                        </div>
+                        <h3 data-i18n="proj.p1t">Dashboards de operação</h3>
+                        <p data-i18n="proj.p1d">Painéis no ServiceNow para acompanhar filas, volume de chamados e indicadores da equipe em tempo real.</p>
+                        <ul class="tags"><li>ServiceNow</li><li>KPIs</li></ul>
+                    </article>
+                    <article class="glass card project reveal">
+                        <div class="project-top">
+                            <span class="icon-badge"><svg class="icon"><use href="#i-wand"/></svg></span>
+                            <span class="status status-ok" data-i18n="proj.live">Em uso</span>
+                        </div>
+                        <h3 data-i18n="proj.p2t">Macros de atendimento</h3>
+                        <p data-i18n="proj.p2d">Macros que padronizam e agilizam respostas recorrentes, reduzindo retrabalho e mantendo a qualidade.</p>
+                        <ul class="tags"><li>ServiceNow</li><li data-i18n="tag.std">Padronização</li></ul>
+                    </article>
+                    <article class="glass card project reveal">
+                        <div class="project-top">
+                            <span class="icon-badge"><svg class="icon"><use href="#i-phone"/></svg></span>
+                            <span class="status status-wip" data-i18n="proj.wip">Em andamento</span>
+                        </div>
+                        <h3 data-i18n="proj.p3t">App para a equipe</h3>
+                        <p data-i18n="proj.p3d">Aplicativo em Power Apps para apoiar a rotina do time de suporte e centralizar informações do dia a dia.</p>
+                        <ul class="tags"><li>Power Apps</li><li>Low-code</li></ul>
+                    </article>
+                    <article class="glass card project reveal">
+                        <div class="project-top">
+                            <span class="icon-badge"><svg class="icon"><use href="#i-list"/></svg></span>
+                            <span class="status status-ok" data-i18n="proj.live">Em uso</span>
+                        </div>
+                        <h3 data-i18n="proj.p4t">Fluxo de backlog</h3>
+                        <p data-i18n="proj.p4d">Apoio na estruturação e gestão do fluxo de backlog, dando previsibilidade às demandas pendentes.</p>
+                        <ul class="tags"><li data-i18n="tag.process">Processos</li><li data-i18n="tag.mgmt">Gestão</li></ul>
+                    </article>
+                    <article class="glass card project reveal">
+                        <div class="project-top">
+                            <span class="icon-badge"><svg class="icon"><use href="#i-code"/></svg></span>
+                            <span class="status status-ok" data-i18n="proj.online">Online</span>
+                        </div>
+                        <h3 data-i18n="proj.p5t">Este portfólio</h3>
+                        <p data-i18n="proj.p5d">Site estático bilíngue com glassmorfismo, tema claro/escuro e animações acessíveis, feito com HTML, CSS e JavaScript.</p>
+                        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                    </article>
+                    <a class="glass card project project-cta reveal" href="https://github.com/pattrickn0" target="_blank" rel="noopener">
+                        <span class="icon-badge"><svg class="icon"><use href="#i-github"/></svg></span>
+                        <h3 data-i18n="proj.ghT">Mais no GitHub</h3>
+                        <p data-i18n="proj.ghD">Estudos em Java, C# e SQL, exercícios de POO e novos projetos.</p>
+                        <span class="link-arrow">github.com/pattrickn0 <svg class="icon"><use href="#i-external"/></svg></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPETÊNCIAS -->
+        <section id="skills" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="eyebrow mono">05 · <span data-i18n="skills.eyebrow">competências</span></span>
+                    <h2 data-i18n="skills.title">Stack &amp; habilidades</h2>
+                </header>
+
+                <div class="core-skills reveal">
+                    <span class="core-label mono" data-i18n="skills.core">principais competências</span>
+                    <span class="core-chip" data-i18n="skills.oop">Programação Orientada a Objetos (POO)</span>
+                    <span class="core-chip" data-i18n="skills.os">Sistemas Operacionais</span>
+                    <span class="core-chip" data-i18n="skills.dev">Desenvolvimento de Software</span>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="glass card skill-group reveal">
+                        <h3><svg class="icon"><use href="#i-code"/></svg> <span data-i18n="skills.g1">Backend &amp; dados</span></h3>
+                        <ul class="skill-list">
+                            <li><img src="./assets/icons/tech/java.svg" alt="" width="28" height="28"><span>Java</span></li>
+                            <li><img src="./assets/icons/tech/csharp.svg" alt="" width="28" height="28"><span>C#</span></li>
+                            <li><img src="./assets/icons/tech/mysql.svg" alt="" width="28" height="28"><span>SQL · MySQL</span></li>
+                            <li><img src="./assets/icons/tech/git.svg" alt="" width="28" height="28"><span>Git</span></li>
+                            <li><img src="./assets/icons/tech/github.svg" alt="" width="28" height="28" class="invert-dark"><span>GitHub</span></li>
+                        </ul>
+                    </article>
+                    <article class="glass card skill-group reveal">
+                        <h3><svg class="icon"><use href="#i-monitor"/></svg> <span data-i18n="skills.g2">Frontend</span></h3>
+                        <ul class="skill-list">
+                            <li><img src="./assets/icons/tech/html5.svg" alt="" width="28" height="28"><span>HTML</span></li>
+                            <li><img src="./assets/icons/tech/css3.svg" alt="" width="28" height="28"><span>CSS</span></li>
+                            <li><img src="./assets/icons/tech/tailwindcss.svg" alt="" width="28" height="28"><span>Tailwind</span></li>
+                            <li><img src="./assets/icons/tech/react.svg" alt="" width="28" height="28"><span>React</span><em class="learning" data-i18n="skills.learning">iniciando</em></li>
+                        </ul>
+                    </article>
+                    <article class="glass card skill-group reveal">
+                        <h3><svg class="icon"><use href="#i-dashboard"/></svg> <span data-i18n="skills.g3">Plataformas &amp; automação</span></h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-glyph"><svg class="icon"><use href="#i-ticket"/></svg></span><span>ServiceNow</span></li>
+                            <li><span class="skill-glyph"><svg class="icon"><use href="#i-phone"/></svg></span><span>Power Apps</span></li>
+                            <li><img src="./assets/icons/tech/windows11.svg" alt="" width="28" height="28"><span>Windows</span></li>
+                            <li><img src="./assets/icons/tech/linux.svg" alt="" width="28" height="28" class="invert-dark"><span>Linux</span></li>
+                        </ul>
+                    </article>
+                    <article class="glass card skill-group reveal">
+                        <h3><svg class="icon"><use href="#i-cpu"/></svg> <span data-i18n="skills.g4">Infraestrutura &amp; suporte</span></h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-glyph"><svg class="icon"><use href="#i-network"/></svg></span><span data-i18n="skills.net">Redes (CCNA ITN)</span></li>
+                            <li><span class="skill-glyph"><svg class="icon"><use href="#i-cpu"/></svg></span><span data-i18n="skills.hw">Hardware &amp; manutenção</span></li>
+                            <li><span class="skill-glyph"><svg class="icon"><use href="#i-database"/></svg></span><span data-i18n="skills.pos">PDV &amp; sistemas de gestão</span></li>
+                            <li><span class="skill-glyph"><svg class="icon"><use href="#i-layers"/></svg></span><span data-i18n="skills.deploy">Implantação de sistemas</span></li>
+                        </ul>
+                    </article>
+                    <article class="glass card skill-group skill-wide reveal">
+                        <h3><svg class="icon"><use href="#i-users"/></svg> <span data-i18n="skills.g5">Soft skills</span></h3>
+                        <ul class="soft-list">
+                            <li data-i18n="skills.s1">Atendimento ao cliente</li>
+                            <li data-i18n="skills.s2">Comunicação clara</li>
+                            <li data-i18n="skills.s3">Resolução de problemas</li>
+                            <li data-i18n="skills.s4">Treinamento de usuários</li>
+                            <li data-i18n="skills.s5">Organização &amp; gestão de prazos</li>
+                            <li data-i18n="skills.s6">Trabalho em equipe</li>
+                            <li data-i18n="skills.s7">Melhoria contínua</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMAÇÃO & CERTIFICAÇÕES -->
+        <section id="education" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="eyebrow mono">06 · <span data-i18n="edu.eyebrow">formação</span></span>
+                    <h2 data-i18n="edu.title">Formação &amp; certificações</h2>
+                </header>
+
+                <div class="edu-grid">
+                    <div class="edu-col">
+                        <h3 class="col-title"><svg class="icon"><use href="#i-grad"/></svg> <span data-i18n="edu.academic">Formação acadêmica</span></h3>
+                        <article class="glass card edu reveal">
+                            <div class="edu-head">
+                                <h4 data-i18n="edu.e1t">Bacharelado em Sistemas da Informação</h4>
+                                <span class="status status-wip" data-i18n="edu.ongoing">Em andamento</span>
+                            </div>
+                            <p class="edu-school">IFF — Instituto Federal Fluminense</p>
+                            <p class="edu-date mono"><span class="period" data-start="2022-07" data-end="2027-02">jul 2022 — fev 2027</span></p>
+                            <div class="progress" data-start="2022-07" data-end="2027-02">
+                                <div class="progress-bar"><span></span></div>
+                                <p class="progress-label mono"><span class="progress-value">0%</span> <span data-i18n="edu.progress">do curso concluído</span></p>
+                            </div>
+                        </article>
+                        <article class="glass card edu reveal">
+                            <div class="edu-head">
+                                <h4 data-i18n="edu.e2t">Técnico em Informática</h4>
+                                <span class="status status-ok" data-i18n="edu.done">Concluído</span>
+                            </div>
+                            <p class="edu-school">Escola Técnica Mercury</p>
+                            <p class="edu-date mono">2025</p>
+                        </article>
+                        <article class="glass card edu reveal">
+                            <div class="edu-head">
+                                <h4 data-i18n="edu.e3t">Técnico em Administração</h4>
+                                <span class="status status-ok" data-i18n="edu.done">Concluído</span>
+                            </div>
+                            <p class="edu-school">Escola Técnica Estadual João Barcelos Martins</p>
+                            <p class="edu-date mono"><span class="period" data-start="2018-04" data-end="2022-02">abr 2018 — fev 2022</span></p>
+                        </article>
+                    </div>
+
+                    <div class="edu-col">
+                        <h3 class="col-title"><svg class="icon"><use href="#i-award"/></svg> <span data-i18n="edu.certs">Certificações</span></h3>
+                        <article class="glass card cert reveal">
+                            <span class="icon-badge"><svg class="icon"><use href="#i-network"/></svg></span>
+                            <div>
+                                <h4>CCNAv7: Introduction to Networks</h4>
+                                <p>Cisco Networking Academy</p>
+                                <ul class="tags"><li data-i18n="tag.network">Redes</li><li>TCP/IP</li></ul>
+                            </div>
+                        </article>
+                        <article class="glass card cert reveal">
+                            <span class="icon-badge"><img src="./assets/icons/tech/csharp.svg" alt="" width="22" height="22"></span>
+                            <div>
+                                <h4>Foundational C# with Microsoft</h4>
+                                <p>freeCodeCamp · Microsoft</p>
+                                <ul class="tags"><li>C#</li><li>.NET</li></ul>
+                            </div>
+                        </article>
+                        <article class="glass card cert reveal">
+                            <span class="icon-badge"><svg class="icon"><use href="#i-code"/></svg></span>
+                            <div>
+                                <h4 data-i18n="edu.c3t">C# Completo — Programação Orientada a Objetos + Projetos</h4>
+                                <p>Udemy</p>
+                                <ul class="tags"><li>C#</li><li data-i18n="tag.oop">POO</li></ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-shell glass glass-strong reveal">
+                    <div class="contact-info">
+                        <span class="eyebrow mono">07 · <span data-i18n="contact.eyebrow">contato</span></span>
+                        <h2 data-i18n="contact.title">Vamos conversar?</h2>
+                        <p class="section-sub" data-i18n="contact.sub">Interessado no meu trabalho, em uma vaga ou em trocar uma ideia sobre tecnologia? Me chama — respondo rápido. Afinal, resolução no primeiro contato é comigo mesmo.</p>
+
+                        <ul class="contact-list">
+                            <li>
+                                <a href="mailto:pattrickn0@gmail.com" class="contact-item">
+                                    <span class="icon-badge"><svg class="icon"><use href="#i-mail"/></svg></span>
+                                    <span><small>E-mail</small>pattrickn0@gmail.com</span>
+                                </a>
+                                <button type="button" class="icon-btn copy-btn" data-copy="pattrickn0@gmail.com" aria-label="Copiar e-mail" data-i18n-attr="aria-label:contact.copy">
+                                    <svg class="icon icon-copy"><use href="#i-copy"/></svg>
+                                    <svg class="icon icon-done"><use href="#i-check"/></svg>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/pattrick-nunes" target="_blank" rel="noopener" class="contact-item">
+                                    <span class="icon-badge"><svg class="icon"><use href="#i-linkedin"/></svg></span>
+                                    <span><small>LinkedIn</small>in/pattrick-nunes</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/pattrickn0" target="_blank" rel="noopener" class="contact-item">
+                                    <span class="icon-badge"><svg class="icon"><use href="#i-github"/></svg></span>
+                                    <span><small>GitHub</small>pattrickn0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="contact-item">
+                                    <span class="icon-badge"><svg class="icon"><use href="#i-pin"/></svg></span>
+                                    <span><small data-i18n="contact.location">Localização</small>Campos dos Goytacazes, RJ · Brasil</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                        <input type="hidden" name="access_key" value="f026d75a-6bb6-426e-abd1-c9342a2428f9">
+                        <input type="hidden" name="from_name" value="Portfólio — Pattrick Nunes">
+                        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <div class="field-row">
+                            <label class="field">
+                                <span data-i18n="form.name">Nome</span>
+                                <input type="text" name="name" autocomplete="name" required placeholder="Seu nome" data-i18n-attr="placeholder:form.namePh">
+                            </label>
+                            <label class="field">
+                                <span data-i18n="form.email">E-mail</span>
+                                <input type="email" name="email" autocomplete="email" required placeholder="voce@empresa.com" data-i18n-attr="placeholder:form.emailPh">
+                            </label>
+                        </div>
+                        <label class="field">
+                            <span data-i18n="form.subject">Assunto</span>
+                            <input type="text" name="subject" required placeholder="Oportunidade, parceria, dúvida..." data-i18n-attr="placeholder:form.subjectPh">
+                        </label>
+                        <label class="field">
+                            <span data-i18n="form.message">Mensagem</span>
+                            <textarea name="message" rows="5" required placeholder="Conte um pouco sobre o que você precisa" data-i18n-attr="placeholder:form.messagePh"></textarea>
+                        </label>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span class="btn-label" data-i18n="form.send">Enviar mensagem</span>
+                            <svg class="icon"><use href="#i-send"/></svg>
+                        </button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> Pattrick Nunes · <span data-i18n="footer.made">Feito com</span> <span class="heart" aria-hidden="true">♥</span> <span data-i18n="footer.and">e muito café</span></p>
+            <a href="#home" class="icon-btn" aria-label="Voltar ao topo" data-i18n-attr="aria-label:a11y.top"><svg class="icon"><use href="#i-arrow-up"/></svg></a>
         </div>
-        <img src="./src/assets/icons/top_arrow.svg" class="my-4">
-        <div class="flex flex-col items-center ">
-            <div class="flex flex-col  max-sm:py-2 items-center text-artic-blue-ultra-dark">
-                <h2 class="font-outfit text-3xl font-bold max-2xl:text-2xl max-lg:text-xl max-md:text-lg">Technical Course in Business Administration</h2>
-                <em class="font-montserrat text-xl max-lg:text-base max-md:text-sm max-sm:text-xs">ETEJBM/FAETEC | 2018 to 2021</em>
-            </div>
-        </div>
-    </section>
-        <section id="contacts" class="flex flex-col items-center justify-center h-[128px] bg-artic-blue">
-            <div class="flex flex-row">
-                <a href="https://github.com/pattrickn0"><img src="./src/assets/icons/github.svg" class="h-[55px] max-2xl:h-[55px] hover:scale-115 max-lg:h-[40px] px-2 invert"></a>
-                <a href="https://www.linkedin.com/in/pattrick-nunes/"><img src="./src/assets/icons/linkedin.svg" class="h-[55px] max-2xl:h-[55px] hover:scale-115  max-lg:h-[40px] invert"></a>
-            </div>
-        </section>
-    <section class="flex flex-col items-center just px-[8vw] max-lg:px-[6vw] max-md:px-[2vw] bg-linear-180 from-artic-blue to-artic-blue-dark">
-        <h1 class="font-outfit text-4xl font-bold text-artic max-2xl:text-3xl max-xl:text-[27px] max-lg:text-[25px] max-md:text-[22px]">Interested in my work? Fill out the form to get in touch.</h1>
-        <form class="flex flex-col items-center my-[4vh]" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="f026d75a-6bb6-426e-abd1-c9342a2428f9">
-            <input type="text" id="email" name="email" placeholder="Your Email" required class="mb-[3vh] p-2 border border-solid border-neutral-400 bg-artic shadow-sm w-[40vw] max-xl:w-[50] max-lg:w-[65vw] h-[6vh] rounded-[8px] font-montserrat text-xl text-black max-2xl:w-[45vw]" >
-            <input type="text" id="title" name="title" placeholder="Title" required class="mb-[3vh] p-2 border border-solid border-neutral-400 bg-artic shadow-sm w-[40vw] max-xl:w-[50] max-lg:w-[65vw] h-[6vh] rounded-[8px] font-montserrat text-xl text-black max-2xl:w-[45vw]" >
-            <textarea type="text" id="message" name="message" placeholder="Body" wrap="soft" resize-none required class=" p-2 pb-18 border border-solid border-neutral-400  bg-artic shadow-sm w-[40vw] max-lg:w-[65vw] h-[12vh] rounded-[8px] font-montserrat text-xl text-black  max-2xl:w-[45vw]"></textarea>
-            <input type="hidden" name="redirect" value="https://web3forms.com/success" target="_blank">
-            <input type="submit" value="Send Email" class="mt-[3vh] border border-solid border-neutral-300 shadow-sm h-[5vh] px-[20px] font-outfit text-xl rounded-[8px] text-white max-2xl:w-[10vw] max-xl:w-[150px] hover:scale-110 hover:bg-artic-blue-ultra-dark">
-        </form>
-        <foorter class="text-center font-montserrat text-artic pt-[2vh]">
-            <h1>Made with Love by ♥ <a href="https://www.linkedin.com/in/pattrick-nunes/"><em class="underline font-bold ">Pattrick</em></a></h1>
-        </foorter>
-    </section>
+    </footer>
+
+    <script src="./assets/js/i18n.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
-
-
