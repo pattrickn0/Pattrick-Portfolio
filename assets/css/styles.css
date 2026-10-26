@@ -564,14 +564,6 @@ main {
     transition: background 0.2s, color 0.2s, transform 0.2s var(--ease);
 }
 .chips li:hover { background: rgba(61, 90, 254, 0.12); color: var(--blue); transform: translateY(-1px); }
-.about-loc {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 20px;
-    font-size: 15px;
-    color: var(--ink-3);
-}
 
 /* Experiência */
 .hint { font-size: 13px; color: var(--ink-3); margin: -6px 0 10px; }
