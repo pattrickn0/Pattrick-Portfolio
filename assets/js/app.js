@@ -2,7 +2,7 @@
 (function () {
     "use strict";
     var ICONS = [{"name": "Java", "src": "./assets/icons/tech/plain/java.svg"}, {"name": "C#", "src": "./assets/icons/tech/plain/csharp.svg"}, {"name": "SQL \u00b7 MySQL", "src": "./assets/icons/tech/plain/mysql.svg"}, {"name": "HTML", "src": "./assets/icons/tech/plain/html5.svg"}, {"name": "CSS", "src": "./assets/icons/tech/plain/css3.svg"}, {"name": "JavaScript", "src": "./assets/icons/tech/plain/javascript.svg"}, {"name": "Git", "src": "./assets/icons/tech/plain/git.svg"}, {"name": "ServiceNow", "sym": "i-ticket"}, {"name": "Power Apps", "sym": "i-phone"}, {"name": "Power BI", "sym": "i-chart", "learning": true}];
-    var PROJECTS = [{"feature": true, "name": "AgentDeck", "kind": {"pt": "Projeto atual · open source · feito com IA", "en": "Current project · open source · built with AI"}, "status": "oss", "desc": {"pt": "Um terminal desktop onde agentes de IA trabalham em equipe. Claude Code, Codex, Antigravity e OpenCode rodam lado a lado em abas de terminal reais, conversam entre si com o ask-agent e recebem tarefas isoladas em git worktrees, que você revisa e mescla. Estou construindo o AgentDeck com os próprios agentes de IA (vibe coding): eu idealizo as funcionalidades e os fluxos, a IA implementa e eu testo cada entrega.", "en": "A desktop terminal where AI agents work as a team. Claude Code, Codex, Antigravity and OpenCode run side by side in real terminal tabs, talk to each other through ask-agent and get isolated tasks in git worktrees that you review and merge. I'm building AgentDeck with the AI agents themselves (vibe coding): I design the features and workflows, the AI implements them, and I test every delivery."}, "tags": [{"pt": "Feito com IA", "en": "Built with AI"}, "Rust", "Git worktrees", "Windows · Linux", {"pt": "Licença MIT", "en": "MIT license"}], "href": "https://github.com/pattrickn0/AgentDeck", "shot": true}];
+    var PROJECTS = [{"feature": true, "name": "AgentDeck", "kind": {"pt": "Projeto atual · open source · feito com IA", "en": "Current project · open source · built with AI"}, "status": "oss", "desc": {"pt": "Um terminal desktop criado para coordenar múltiplos agentes de IA trabalhando juntos. Nele, ferramentas como Claude Code, Codex, Antigravity e OpenCode rodam lado a lado em abas de terminal reais, trocam mensagens via linha de comando e executam tarefas isoladas em git worktrees para revisão e merge. Desenvolvo o projeto definindo a arquitetura, os fluxos de uso e validando cada implementação na prática junto aos próprios agentes.", "en": "A desktop terminal built to coordinate multiple AI agents working together. Tools like Claude Code, Codex, Antigravity and OpenCode run side by side in real terminal tabs, message each other via CLI and execute isolated tasks in git worktrees for review and merge. I build the project by designing the architecture and workflows and testing every implementation alongside the agents themselves."}, "tags": [{"pt": "Feito com IA", "en": "Built with AI"}, "Rust", "Git worktrees", "Windows · Linux", {"pt": "Licença MIT", "en": "MIT license"}], "href": "https://github.com/pattrickn0/AgentDeck", "shot": true}];
     var ENDPOINT = {"url": "https://api.web3forms.com/submit", "key": "f026d75a-6bb6-426e-abd1-c9342a2428f9"};
     var root = document.documentElement;
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -13,33 +13,33 @@
             "pal.nav": "Go to", "pal.actions": "Actions", "pal.links": "Links", "pal.empty": "Nothing found. Try \"email\" or \"experience\".",
             "pal.copy": "Copy email", "pal.copied": "Email copied", "pal.lang": "Ver em português", "pal.agentdeck": "AgentDeck on GitHub",
             "nav.aria": "Sections", "nav.about": "About", "nav.exp": "Experience", "nav.edu": "Education", "nav.proj": "Projects", "nav.contact": "Contact",
-            "hero.title": "I solve problems. I\u00a0automate the rest.",
-            "hero.lede": "I like understanding how things work. When something breaks, I <strong>dig until I find the cause</strong>. When something repeats, I <strong>turn it into an automated process</strong>.",
-            "hero.cta1": "Get to know me", "hero.projects": "See projects",
+            "hero.title": "Less rework, more intelligence in the process.",
+            "hero.lede": "I map where processes get stuck and build the solution to unblock them — combining <strong>automation</strong>, <strong>data</strong> and <strong>AI-assisted development</strong> to turn manual work into smart workflows.",
+            "hero.cta1": "About me", "hero.projects": "See projects",
             "hero.kicker": "Pattrick Nunes · Portfolio",
             "hero.hint": "Move your cursor to pick the color of the light", "hero.hintTouch": "Tap to pick the color of the light",
-            "about.kicker": "Who I am", "about.title": "One problem goes in. Many solutions come out.",
-                        "about.p1": "I'm studying for a <strong>Bachelor's in Information Systems</strong> at IFF, with technical degrees in IT and in Business Administration.",
-            "about.p2": "I've assembled computers, deployed systems in stores, set up auditoriums for events and today I build automations at work. I also create my own tools with the help of AI agents, like <strong>AgentDeck</strong>.",
-            "about.p3": "The common thread is the same: <strong>find the cause and leave the process better than I found it</strong>.",
-            "about.sub": "Like the light in the prism up top: every problem that reaches me opens up into steps.",
-            "ray1.t": "Investigate", "ray1.d": "Understand the cause before touching anything, whether it's hardware, software, network or process.",
-            "ray2.t": "Automate", "ray2.d": "Whatever repeats becomes a process: dashboards, macros and low-code apps.",
-            "ray3.t": "Build", "ray3.d": "My own tools when the existing ones don't cut it, built together with AI agents, like AgentDeck.",
-            "ray4.t": "Teach", "ray4.d": "Train people so the solution works day to day.",
-            "exp.kicker": "Experience", "exp.title": "Where I've been.", "exp.sub": "From audiovisual to deployments and automation. Open an experience to see the details.",
-            "edu.kicker": "Education", "edu.title": "Always learning.",
-            "edu.ongoing": "In progress", "edu.degree": "Bachelor's in Information Systems", "edu.done": "of the course timeline",
+            "about.kicker": "About me", "about.title": "Technology applied to real routines.",
+            "about.p1": "I'm studying <strong>Information Systems</strong> at IFF and hold technical degrees in <strong>IT</strong> and in <strong>Business Administration</strong>. That background helps me connect the technical side with process organization.",
+            "about.p2": "I started in on-site support, assembling machines, setting up networks and deploying systems in retail stores. Today I work at <strong>Minsait</strong>, where alongside support I build dashboards, macros and internal apps to speed up the operation.",
+            "about.p3": "I also build my own tools using AI agents in the development workflow — such as <strong>AgentDeck</strong> — always looking to get manual work out of the way.",
+            "about.sub": "From infrastructure to automation, my focus is organizing workflows, bringing visibility to data and making the team's work easier.",
+            "ray1.t": "Diagnosis", "ray1.d": "Understand the context and find the root of the problem before touching hardware, software or workflows.",
+            "ray2.t": "Standardization", "ray2.d": "Organize recurring demands with standardized replies, clear documentation and queue management.",
+            "ray3.t": "Automation", "ray3.d": "Build ServiceNow dashboards, Power Apps solutions and custom tools to cut out manual steps.",
+            "ray4.t": "Training", "ray4.d": "Guide users and follow up on daily routines to make sure the solution genuinely helps people on the ground.",
+            "exp.kicker": "Experience", "exp.title": "Work experience.", "exp.sub": "From system deployments and hardware maintenance to enterprise support and automation at Minsait.",
+            "edu.kicker": "Education", "edu.title": "Academic & technical background.",
+            "edu.ongoing": "In progress", "edu.degree": "Bachelor's in Information Systems", "edu.done": "completed",
             "edu.tech": "Technical program", "edu.it": "IT Technician", "edu.adm": "Business Administration Technician",
             "edu.certs": "Certifications", "edu.langs": "Languages", "edu.en": "English", "edu.enLevel": "advanced reading · basic conversation",
             "cert.net": "Networking", "cert.oop": "C# · OOP",
-            "proj.kicker": "Projects", "proj.title": "What I'm building.",
+            "proj.kicker": "Projects", "proj.title": "In development.",
             "contact.kicker": "Contact", "contact.title": "Let's talk?",
-            "contact.sub": "Whether it's an opportunity, a project or a process that needs automating, reach out wherever you prefer.",
+            "contact.sub": "If you'd like to talk about an opportunity, exchange ideas on automation or learn more about my work, feel free to send a message.",
             "contact.copy": "Copy", "contact.copied": "Copied", "contact.selected": "Selected · Ctrl+C", "contact.loc": "Location",
             "f.name": "Name", "f.nameph": "Your name", "f.email": "Email", "f.emailph": "you@company.com",
             "f.topic": "Subject", "f.o1": "Job opportunity", "f.o2": "Project or automation", "f.o3": "Exchange ideas", "f.o4": "Other",
-            "f.msg": "Message", "f.msgph": "Tell me a bit about what you have in mind", "f.send": "Send message",
+            "f.msg": "Message", "f.msgph": "Write your message...", "f.send": "Send message",
             "f.invalid": "Fill in every field with a valid email.", "f.sending": "Sending…", "f.ok": "Message sent! I’ll get back to you soon.", "f.error": "Couldn’t send right now. Please try again or write to pattrickn0@gmail.com.", "f.subject": "New message from the portfolio",
             "f.proto": "Prototype: nothing is sent from this page. On the live site this form delivers to Pattrick's inbox. For now, write to pattrickn0@gmail.com.",
             "foot.stack": "Tools I use", "foot.learning": "Learning now", "foot.links": "Links", "foot.top": "Back to top",
@@ -60,58 +60,59 @@
     var JOBS = [
         { start: "2025-10", end: "", co: "Minsait",
           role: { pt: "Analista Help Desk N1", en: "Help Desk Analyst L1" },
-          desc: { pt: "Atendimento a usuários via chat e telefone, com foco em resolver no primeiro contato, e criação de ferramentas que deixam a operação mais ágil.", en: "Supporting users via chat and phone, focused on solving at first contact, and building tools that make the operation faster." },
+          desc: { pt: "Atendimento a usuários por chat e telefone buscando resolver os chamados já no primeiro contato, além de criar ferramentas internas para reduzir o tempo de resposta da operação.", en: "Supporting users via chat and phone with a focus on first-contact resolution, while building internal tools to reduce the operation's response time." },
           groups: [
             { t: { pt: "Melhoria contínua e automação", en: "Continuous improvement & automation" }, items: [
                 { pt: "Dashboards no ServiceNow para acompanhar filas, volume e indicadores da equipe", en: "ServiceNow dashboards to track queues, volume and team KPIs" },
                 { pt: "Macros no ServiceNow que padronizam e agilizam respostas recorrentes", en: "ServiceNow macros that standardize and speed up recurring replies" },
-                { pt: "Aplicativo em Power Apps para apoiar a rotina da equipe (em andamento)", en: "A Power Apps app to support the team's routine (in progress)" },
-                { pt: "Apoio na estruturação e gestão do fluxo de backlog", en: "Helped structure and manage the backlog workflow" } ] },
+                { pt: "Aplicativo em Power Apps para apoiar a rotina da equipe (em andamento)", en: "A Power Apps application to support the team's daily routine (in progress)" },
+                { pt: "Apoio na organização e acompanhamento do fluxo de backlog", en: "Helped structure and track the backlog workflow" } ] },
             { t: { pt: "Resultados", en: "Results" }, items: [
-                { pt: "CSAT acima de 95% em todos os meses, com meses de 100% de satisfação", en: "CSAT above 95% every month, with months at 100% satisfaction" },
-                { pt: "Média acima de 100 pesquisas de satisfação respondidas por mês", en: "Average of 100+ satisfaction surveys answered per month" },
-                { pt: "Top 1 da operação em volume de avaliações positivas durante um período", en: "Top 1 in the operation for positive reviews during a period" },
-                { pt: "Até 4 usuários simultâneos no chat, sem perda de qualidade", en: "Up to 4 simultaneous users in chat, with no loss of quality" } ] } ],
-          note: { pt: "Antes, fui Ponto Único de Contato (SPOC) entre usuários e equipes resolvedoras: triagem, encaminhamento, acompanhamento de prazos e comunicação até o encerramento.", en: "Previously, I was the Single Point of Contact (SPOC) between users and resolver teams: triage, routing, deadline tracking and communication until closure." } },
+                { pt: "CSAT acima de 95% todos os meses, chegando a 100% em mais de um fechamento", en: "CSAT above 95% every month, reaching 100% in multiple monthly closes" },
+                { pt: "Média superior a 100 pesquisas de satisfação respondidas por mês", en: "Average of over 100 satisfaction surveys answered per month" },
+                { pt: "1º lugar da operação em volume de avaliações positivas durante um período", en: "Ranked 1st in the operation for positive feedback volume during a period" },
+                { pt: "Atendimento simultâneo de até 4 usuários no chat mantendo o padrão de qualidade", en: "Simultaneous support for up to 4 chat users while maintaining quality standards" } ] } ],
+          note: { pt: "Anteriormente atuei como Ponto Único de Contato (SPOC) entre usuários e equipes técnicas, fazendo a triagem, o acompanhamento de prazos e a comunicação até a conclusão dos chamados.", en: "Previously served as Single Point of Contact (SPOC) between users and technical teams, handling triage, SLA tracking and communication through ticket closure." } },
         { start: "2024-08", end: "2025-09", co: "Líder Brasil Informática",
           role: { pt: "Técnico de Informática", en: "IT Technician" },
-          desc: { pt: "Da manutenção de computadores à implantação de sistemas em novos clientes, presencial e remoto.", en: "From computer maintenance to deploying systems for new clients, on-site and remote." },
+          desc: { pt: "Atuação desde o diagnóstico e manutenção de equipamentos até a implantação completa de sistemas comerciais em clientes, tanto presencialmente quanto por acesso remoto.", en: "Worked from hardware troubleshooting and maintenance to full deployment of business systems for clients, both on-site and remotely." },
           groups: [
             { t: { pt: "Suporte e manutenção", en: "Support & maintenance" }, items: [
-                { pt: "Montagem, manutenção e diagnóstico de hardware e software", en: "Assembly, maintenance and troubleshooting of hardware and software" },
-                { pt: "Formatação e configuração de computadores e periféricos", en: "Formatting and setup of computers and peripherals" } ] },
+                { pt: "Diagnóstico, montagem e manutenção preventiva e corretiva de computadores", en: "Troubleshooting, assembly and preventive/corrective maintenance of computers" },
+                { pt: "Formatação, preparo de ambiente e configuração de periféricos", en: "OS installation, environment setup and peripheral configuration" } ] },
             { t: { pt: "Sistemas de gestão e ponto", en: "Management & time-tracking systems" }, items: [
-                { pt: "Suporte remoto a PDV, gestão comercial e relógio de ponto", en: "Remote support for POS, business management and time clocks" },
-                { pt: "Relatórios, ajuste de batidas, cálculo de horas e cadastro de usuários", en: "Reports, punch adjustments, hour calculations and user registration" } ] },
+                { pt: "Suporte remoto a sistemas de PDV, retaguarda comercial e controle de ponto", en: "Remote support for POS, retail management and time-tracking systems" },
+                { pt: "Geração de relatórios, ajuste de marcações, apuração de horas e cadastro de usuários", en: "Report generation, punch adjustments, hour calculations and user setup" } ] },
             { t: { pt: "Implantação", en: "Deployment" }, items: [
-                { pt: "Instalação e configuração de sistemas do zero em novos clientes", en: "Installing and configuring systems from scratch for new clients" },
-                { pt: "Treinamento de usuários para o dia a dia", en: "Training users for day-to-day use" } ] } ] },
+                { pt: "Parametrização e instalação de sistemas do zero em novos clientes", en: "Installing and configuring systems from scratch for new clients" },
+                { pt: "Treinamento prático das equipes para operação no dia a dia", en: "Hands-on user training for daily operations" } ] } ] },
         { start: "2023-10", end: "2024-07", co: "DAM Soluções",
           role: { pt: "Estagiário de Suporte TI", en: "IT Support Intern" },
-          desc: { pt: "Implantação e suporte de sistemas de PDV e gestão comercial em clientes de vários segmentos.", en: "Deploying and supporting POS and business management systems for clients across many segments." },
+          desc: { pt: "Implantação e suporte técnico a sistemas de frente de caixa (PDV) e gestão comercial para clientes do varejo.", en: "Deployment and technical support for POS and retail management systems across various client segments." },
           groups: [
-            { t: { pt: "Suporte", en: "Support" }, items: [
-                { pt: "Diagnóstico e solução de problemas em PDV e sistemas de gestão", en: "Diagnosing and solving issues in POS and management systems" },
-                { pt: "Instalação de impressoras fiscais, leitores de código de barras e periféricos", en: "Installing fiscal printers, barcode scanners and peripherals" },
-                { pt: "Ajustes de rede e crimpagem de cabos", en: "Network adjustments and cable crimping" } ] },
+            { t: { pt: "Suporte técnico", en: "Technical support" }, items: [
+                { pt: "Resolução de dúvidas operacionais e erros em sistemas de PDV e gestão", en: "Resolving operational questions and errors in POS and management software" },
+                { pt: "Configuração de impressoras fiscais, leitores e equipamentos de automação comercial", en: "Configuring fiscal printers, barcode scanners and retail hardware" },
+                { pt: "Organização de rede local e cabeamento estruturado básico", en: "Local network adjustments and cable crimping" } ] },
             { t: { pt: "Implantação e treinamento", en: "Deployment & training" }, items: [
-                { pt: "Implantação em novos estabelecimentos, da análise da infraestrutura à configuração final", en: "Deployments in new businesses, from infrastructure analysis to final setup" },
-                { pt: "Treinamentos personalizados para os usuários", en: "Personalized user training" } ] },
-            { t: { pt: "Melhoria do produto", en: "Product improvement" }, items: [
-                { pt: "Registro de bugs e sugestões para o time de desenvolvimento, e testes das correções", en: "Reported bugs and ideas to the dev team, and tested the fixes" } ] } ] },
+                { pt: "Acompanhamento de implantações em novos clientes, da infraestrutura à virada do sistema", en: "Supported new store deployments from infrastructure checks to go-live" },
+                { pt: "Treinamento inicial de caixa e retaguarda para novos usuários", en: "Initial cashier and back-office training for new users" } ] },
+            { t: { pt: "Qualidade e produto", en: "Product quality" }, items: [
+                { pt: "Documentação de bugs, envio de sugestões ao time de desenvolvimento e validação de correções", en: "Documented bugs, shared feedback with the dev team and validated fixes" } ] } ] },
         { start: "2023-03", end: "2023-09", co: "IFF · Instituto Federal Fluminense",
           role: { pt: "Bolsista de Multimídia", en: "Multimedia Student Assistant" },
-          desc: { pt: "Suporte audiovisual para alunos, professores e eventos do campus.", en: "Audiovisual support for students, teachers and campus events." },
+          desc: { pt: "Apoio técnico audiovisual para aulas, defesas e eventos acadêmicos no campus.", en: "Technical audiovisual support for classes, presentations and academic events on campus." },
           groups: [
-            { t: { pt: "Atendimento", en: "Support" }, items: [
-                { pt: "Configuração de projetores, som e videoconferência", en: "Setting up projectors, sound and video conferencing" },
-                { pt: "Solução de problemas durante aulas, apresentações e reuniões", en: "Troubleshooting during classes, presentations and meetings" } ] },
-            { t: { pt: "Eventos", en: "Events" }, items: [
-                { pt: "Montagem de auditórios: som, projeção, iluminação e disposição do espaço", en: "Setting up auditoriums: sound, projection, lighting and layout" },
-                { pt: "Apoio na organização de palestras, seminários e workshops", en: "Helping organize lectures, seminars and workshops" } ] } ] }
+            { t: { pt: "Suporte em sala", en: "Classroom support" }, items: [
+                { pt: "Preparação e ajuste de projetores, sistemas de som e equipamentos de videoconferência", en: "Setup and adjustment of projectors, audio systems and video conferencing gear" },
+                { pt: "Atendimento rápido a problemas técnicos durante aulas e apresentações", en: "Quick troubleshooting during lectures, presentations and meetings" } ] },
+            { t: { pt: "Eventos no auditório", en: "Auditorium events" }, items: [
+                { pt: "Operação de som, projeção e iluminação nos auditórios da instituição", en: "Operating sound, projection and lighting across campus auditoriums" },
+                { pt: "Apoio técnico na realização de palestras, seminários e workshops", en: "Technical support for lectures, seminars and workshops" } ] } ] }
     ];
 
     var lang = "pt";
+    var jobsInit = false;
     var original = new Map();
     function $(s, c) { return (c || document).querySelector(s); }
     function $$(s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); }
@@ -145,7 +146,9 @@
     }
 
     function renderJobs() {
-        var openIndex = $$("#timeline details").findIndex(function (d) { return d.open; });
+        var detailsList = $$("#timeline details");
+        var openIndex = jobsInit ? detailsList.findIndex(function (d) { return d.open; }) : 0;
+        jobsInit = true;
         $("#timeline").innerHTML = JOBS.map(function (j, i) {
             var groups = j.groups.map(function (g) {
                 return '<div class="group"><h4>' + esc(L(g.t)) + '</h4><ul>' + g.items.map(function (it) { return '<li>' + esc(L(it)) + '</li>'; }).join("") + '</ul></div>';
@@ -161,6 +164,16 @@
             d.addEventListener("toggle", function () {
                 if (!d.open) return;
                 $$("#timeline details").forEach(function (o) { if (o !== d) o.open = false; });
+                if (!reduce && window.gsap) {
+                    var els = $$(".job-body > p, .group, .note", d);
+                    window.gsap.fromTo(els,
+                        { y: 18, rotationX: 8, opacity: 0, transformPerspective: 800 },
+                        { y: 0, rotationX: 0, opacity: 1, duration: 0.55, stagger: 0.08, ease: "power3.out",
+                          onStart: function () { els.forEach(function (el) { el.style.willChange = "transform, opacity"; }); },
+                          onComplete: function () { els.forEach(function (el) { el.style.willChange = ""; }); }
+                        }
+                    );
+                }
             });
         });
     }
@@ -168,7 +181,7 @@
     function renderProjects() {
         $("#projects").innerHTML = PROJECTS.map(function (p) {
             var tags = '<ul class="tags">' + p.tags.map(function (x) { return "<li>" + esc(L(x)) + "</li>"; }).join("") + "</ul>";
-            return '<a class="feature" href="' + p.href + '" target="_blank" rel="noopener">' +
+            return '<a class="feature" data-tilt href="' + p.href + '" target="_blank" rel="noopener">' +
                 '<div class="feature-copy"><div><span class="label">' + esc(L(p.kind)) + '</span><h3>' + esc(p.name) + '</h3></div>' +
                 '<div class="feature-side"><p>' + esc(L(p.desc)) + '</p>' + tags +
                 '<div class="feature-foot"><span class="status">' + t(p.status) + '</span><span class="link-out">' + t("repo") + ' <svg class="icon"><use href="#i-out"/></svg></span></div></div></div>' +
@@ -178,14 +191,39 @@
         }).join("");
     }
 
+    var eduAnimated = false;
     function renderEdu() {
         var box = $("#degree-progress");
         var a = month(box.dataset.start).getTime(), b = month(box.dataset.end).getTime();
         var pct = Math.round(Math.max(0, Math.min(1, (Date.now() - a) / (b - a))) * 100);
-        $("#degree-pct").textContent = pct;
-        $("#degree-bar").style.setProperty("--p", pct + "%");
         $("#degree-range").textContent = fmt(box.dataset.start) + " — " + fmt(box.dataset.end);
         $("#adm-range").textContent = fmt("2018-04") + " — " + fmt("2022-02");
+        if (reduce || eduAnimated || !("IntersectionObserver" in window)) {
+            $("#degree-pct").textContent = pct;
+            $("#degree-bar").style.setProperty("--p", pct + "%");
+            return;
+        }
+        $("#degree-pct").textContent = "0";
+        $("#degree-bar").style.setProperty("--p", "0%");
+        var obs = new IntersectionObserver(function (entries) {
+            if (!entries[0].isIntersecting) return;
+            obs.disconnect();
+            eduAnimated = true;
+            var bar = $("#degree-bar i");
+            if (window.gsap && bar) {
+                window.gsap.fromTo(bar, { width: "0%" }, { width: pct + "%", duration: 1.2, ease: "power3.out" });
+            } else {
+                $("#degree-bar").style.setProperty("--p", pct + "%");
+            }
+            var t0 = performance.now(), dur = 1150;
+            (function tick(now) {
+                var k = Math.min(1, (now - t0) / dur);
+                var ease = 1 - Math.pow(1 - k, 3);
+                $("#degree-pct").textContent = Math.round(pct * ease);
+                if (k < 1) requestAnimationFrame(tick);
+            })(t0);
+        }, { threshold: 0.35 });
+        obs.observe(box);
     }
 
     $$("[data-t]").forEach(function (el) { original.set(el, { text: el.textContent }); });
@@ -203,22 +241,33 @@
         $$("[data-t-aria]").forEach(function (el) { el.setAttribute("aria-label", lang === "en" ? (T.en[el.dataset.tAria] || original.get(el).aria) : original.get(el).aria); });
         $$(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === lang)); });
         renderJobs(); renderProjects(); renderEdu();
+        initTilt();
         try { localStorage.setItem("pn3-lang", lang); } catch (e) {}
     }
     $$(".lang button").forEach(function (b) { b.addEventListener("click", function () { apply(b.dataset.lang); }); });
 
     /* Prisma interativo: o feixe entra pela esquerda, o vidro o abre num espectro contínuo
-       e a poeira no ar acende quando cruza a luz. O cursor inclina o feixe e gira o prisma. */
+       e a poeira no ar acende quando cruza a luz. O cursor inclina o feixe naturalmente
+       dentro da área útil da Hero, sem sobrescrever a cor ao sair pelas bordas ou rolar. */
     var pc = $("#prism"), px = pc.getContext("2d");
-    var picked = false, lastHue = -1, lastSave = 0;
+    var picked = false, lastHue = 200, lastSave = 0;
+    function kToHue(k) {
+        var stops = [0, 28, 48, 150, 195, 225, 270, 325];
+        var pos = Math.max(0, Math.min(1, k)) * (stops.length - 1);
+        var idx = Math.min(stops.length - 2, Math.floor(pos));
+        var frac = pos - idx;
+        return Math.round(stops[idx] + (stops[idx + 1] - stops[idx]) * frac);
+    }
     function setAccent(k) {
-        var h = Math.round(k * 275);
+        var h = kToHue(k);
         if (Math.abs(h - lastHue) < 2) return;
         lastHue = h;
         root.style.setProperty("--hue", h);
         if (picked && performance.now() - lastSave > 600) { lastSave = performance.now(); try { localStorage.setItem("pn3-hue", k.toFixed(3)); } catch (e) {} }
     }
-    var PW = 0, PH = 0, aim = 0.5, cur = 0.5, aimX = 0.5, curX = 0.5, clock = 0, lastMove = -1e9, motes = [];
+    var defaultPick = 0.58;
+    var PW = 0, PH = 0, aim = defaultPick, cur = defaultPick, aimX = 0.5, curX = 0.5, clock = 0.5, lastMove = -1e9, motes = [];
+    var prevY = null;
     function sizePrism() {
         var dpr = Math.min(2, window.devicePixelRatio || 1);
         PW = pc.clientWidth; PH = pc.clientHeight;
@@ -232,7 +281,7 @@
     }
     function lerp(p, q, k) { return { x: p.x + (q.x - p.x) * k, y: p.y + (q.y - p.y) * k }; }
     function turn(p, c, a) { var sn = Math.sin(a), cs = Math.cos(a), dx = p.x - c.x, dy = p.y - c.y; return { x: c.x + dx * cs - dy * sn, y: c.y + dx * sn + dy * cs }; }
-    function hue(k, a, l) { return "hsla(" + Math.round(k * 275) + ",100%," + (l || 62) + "%," + a + ")"; }
+    function hue(k, a, l) { return "hsla(" + kToHue(k) + ",100%," + (l || 62) + "%," + a + ")"; }
     function along(o, ang, d) { return { x: o.x + Math.cos(ang) * d, y: o.y + Math.sin(ang) * d }; }
     function segDist(pt, a, b) {
         var vx = b.x - a.x, vy = b.y - a.y, wx = pt.x - a.x, wy = pt.y - a.y;
@@ -262,89 +311,187 @@
 
         var pick = Math.max(0, Math.min(1, cur));
         setAccent(pick);
-        px.globalCompositeOperation = "lighter";
-        // espectro completo, quase apagado: mostra de onde a cor saiu
-        var g1 = along(X, base, reach * 0.35), g2 = along(X, base + spread, reach * 0.35);
-        var band = px.createLinearGradient(g1.x, g1.y, g2.x, g2.y);
-        for (var s = 0; s <= 6; s++) band.addColorStop(s / 6, hue(s / 6, 0.05));
-        px.fillStyle = band;
-        var f1 = along(X, base - 0.03, reach), f2 = along(X, base + spread + 0.03, reach);
-        px.beginPath(); px.moveTo(X.x, X.y); px.lineTo(f1.x, f1.y); px.lineTo(f2.x, f2.y); px.closePath(); px.fill();
-
-        // fantasma do espectro: raios finos e fracos
-        var N = mobile ? 24 : 36;
-        px.lineCap = "round";
-        for (var j = 0; j < N; j++) {
-            var k = j / (N - 1);
-            var o = lerp(A, B, xk + (k - 0.5) * 0.05);
-            var e = along(o, base + spread * k, reach);
-            px.strokeStyle = hue(k, 0.05);
-            px.lineWidth = mobile ? 1.6 : 2;
-            px.beginPath(); px.moveTo(o.x, o.y); px.lineTo(e.x, e.y); px.stroke();
-        }
-        // o raio escolhido: uma cor só, forte, com brilho em camadas
-        var so = lerp(A, B, xk + (pick - 0.5) * 0.05);
+        var spanW = 0.065;
+        var X1 = lerp(A, B, xk - spanW), X2 = lerp(A, B, xk + spanW);
+        var so = lerp(X1, X2, pick);
         var sa = base + spread * pick;
         var se = along(so, sa, reach);
-        [[34, 0.07, 60], [13, 0.26, 62], [4, 0.95, 66], [1.4, 0.9, 88]].forEach(function (layer) {
-            px.strokeStyle = hue(pick, layer[1], layer[2]);
-            px.lineWidth = mobile ? layer[0] * 0.75 : layer[0];
+
+        // 1. Corpo de vidro do prisma (limpo, sem faixas opacas que cortem o feixe)
+        var mid = { x: (B.x + C.x) / 2, y: (B.y + C.y) / 2 };
+        var glass = px.createLinearGradient(A.x, A.y, mid.x, mid.y);
+        glass.addColorStop(0, "rgba(255,255,255,0.12)");
+        glass.addColorStop(0.6, "rgba(255,255,255,0.03)");
+        glass.addColorStop(1, "rgba(255,255,255,0.08)");
+        px.fillStyle = glass;
+        px.beginPath(); px.moveTo(A.x, A.y); px.lineTo(B.x, B.y); px.lineTo(C.x, C.y); px.closePath(); px.fill();
+
+        px.globalCompositeOperation = "lighter";
+        px.lineCap = "round";
+        px.lineJoin = "round";
+
+        // 2. Leque de dispersão interna com bordas 100% suaves (gradiente transversal de alpha 0 -> pico -> alpha 0)
+        var X1w = lerp(A, B, xk - spanW * 1.9), X2w = lerp(A, B, xk + spanW * 1.9);
+        var inTrans = px.createLinearGradient(X1w.x, X1w.y, X2w.x, X2w.y);
+        inTrans.addColorStop(0, "rgba(255,255,255,0)");
+        inTrans.addColorStop(0.22, hue(0.15, 0.07, 72));
+        inTrans.addColorStop(Math.max(0.25, Math.min(0.75, 0.22 + pick * 0.56)), hue(pick, 0.24, 78));
+        inTrans.addColorStop(0.78, hue(0.85, 0.07, 72));
+        inTrans.addColorStop(1, "rgba(255,255,255,0)");
+        px.fillStyle = inTrans;
+        px.beginPath(); px.moveTo(E.x, E.y); px.lineTo(X1w.x, X1w.y); px.lineTo(X2w.x, X2w.y); px.closePath(); px.fill();
+
+        // Gradiente longitudinal interno (branco na entrada E -> cor refratada na saída X)
+        var inLong = px.createLinearGradient(E.x, E.y, X.x, X.y);
+        inLong.addColorStop(0, "rgba(255,255,255,0.38)");
+        inLong.addColorStop(0.45, "rgba(255,255,255,0.14)");
+        inLong.addColorStop(1, hue(pick, 0.22, 74));
+        px.save();
+        px.beginPath(); px.moveTo(E.x, E.y); px.lineTo(X1.x, X1.y); px.lineTo(X2.x, X2.y); px.closePath();
+        px.fillStyle = inLong;
+        // Mascara com o gradiente transversal para não criar quina seca nas laterais do cone interno
+        px.globalAlpha = 0.55;
+        px.fill();
+        px.restore();
+        px.globalAlpha = 1;
+
+        // 3. Espectro externo contínuo e difuso (gradiente transversal suave sem bordas duras)
+        var f1 = along(X1, base - 0.045, reach), f2 = along(X2, base + spread + 0.045, reach);
+        var g1 = along(X1, base - 0.04, reach * 0.36), g2 = along(X2, base + spread + 0.04, reach * 0.36);
+        var band = px.createLinearGradient(g1.x, g1.y, g2.x, g2.y);
+        band.addColorStop(0, "rgba(255,255,255,0)");
+        for (var s = 0; s <= 6; s++) {
+            var ks = s / 6;
+            band.addColorStop(0.08 + ks * 0.84, hue(ks, 0.065, 64));
+        }
+        band.addColorStop(1, "rgba(255,255,255,0)");
+        px.fillStyle = band;
+        px.beginPath(); px.moveTo(X1.x, X1.y); px.lineTo(f1.x, f1.y); px.lineTo(f2.x, f2.y); px.lineTo(X2.x, X2.y); px.closePath(); px.fill();
+
+        // Raios finos do espectro que nascem suavemente na face do vidro
+        var N = mobile ? 24 : 36;
+        for (var j = 0; j < N; j++) {
+            var k = j / (N - 1);
+            var o = lerp(X1, X2, k);
+            var e = along(o, base + spread * k, reach);
+            var rgLine = px.createLinearGradient(o.x, o.y, e.x, e.y);
+            rgLine.addColorStop(0, hue(k, 0.01, 70));
+            rgLine.addColorStop(0.05, hue(k, 0.055, 65));
+            rgLine.addColorStop(0.65, hue(k, 0.035, 62));
+            rgLine.addColorStop(1, hue(k, 0, 60));
+            px.strokeStyle = rgLine;
+            px.lineWidth = mobile ? 1.6 : 2.2;
+            px.beginPath(); px.moveTo(o.x, o.y); px.lineTo(e.x, e.y); px.stroke();
+        }
+
+        // 4. Feixe óptico contínuo (Entrada O -> E -> Saída so -> se) sem cortes retos ("butt")
+        // Camadas de atmosfera e brilho que envolvem todo o trajeto da luz continuamente
+        [[46, 0.04], [20, 0.11], [8, 0.26]].forEach(function (aura) {
+            var w = mobile ? aura[0] * 0.72 : aura[0], al = aura[1];
+            // Entrada branca até E
+            var gIn = px.createLinearGradient(O.x, O.y, E.x, E.y);
+            gIn.addColorStop(0, "rgba(255,255,255,0)");
+            gIn.addColorStop(mobile ? 0.2 : 0.58, "rgba(255,255,255," + (al * 0.35).toFixed(4) + ")");
+            gIn.addColorStop(1, "rgba(255,255,255," + al + ")");
+            px.strokeStyle = gIn; px.lineWidth = w;
+            px.beginPath(); px.moveTo(O.x, O.y); px.lineTo(E.x, E.y); px.stroke();
+
+            // Ponte interna dentro do cristal (E -> so) conectando a luz sem degrau
+            var gMid = px.createLinearGradient(E.x, E.y, so.x, so.y);
+            gMid.addColorStop(0, "rgba(255,255,255," + (al * 0.9).toFixed(4) + ")");
+            gMid.addColorStop(1, hue(pick, al * 1.1, 70));
+            px.strokeStyle = gMid; px.lineWidth = w * 0.85;
+            px.beginPath(); px.moveTo(E.x, E.y); px.lineTo(so.x, so.y); px.stroke();
+
+            // Saída refratada (so -> se)
+            var gOut = px.createLinearGradient(so.x, so.y, se.x, se.y);
+            gOut.addColorStop(0, hue(pick, al * 1.25, 68));
+            gOut.addColorStop(0.65, hue(pick, al, 62));
+            gOut.addColorStop(1, hue(pick, 0, 60));
+            px.strokeStyle = gOut; px.lineWidth = w;
             px.beginPath(); px.moveTo(so.x, so.y); px.lineTo(se.x, se.y); px.stroke();
         });
 
-        // luz dentro do vidro, já começando a se separar
-        var X1 = lerp(A, B, xk - 0.03), X2 = lerp(A, B, xk + 0.03);
-        var inner = px.createLinearGradient(E.x, E.y, X.x, X.y);
-        inner.addColorStop(0, "rgba(255,255,255,0.55)");
-        inner.addColorStop(1, hue(pick, 0.35, 70));
-        px.fillStyle = inner;
-        px.beginPath(); px.moveTo(E.x, E.y); px.lineTo(X1.x, X1.y); px.lineTo(X2.x, X2.y); px.closePath(); px.fill();
-
-        // feixe branco em camadas: névoa, brilho e núcleo
-        [[28, 0.06], [10, 0.2], [3, 1]].forEach(function (layer) {
-            var fade = px.createLinearGradient(O.x, O.y, E.x, E.y);
-            fade.addColorStop(0, "rgba(255,255,255,0)");
-            fade.addColorStop(mobile ? 0.2 : 0.62, "rgba(255,255,255," + layer[1] * 0.35 + ")");
-            fade.addColorStop(1, "rgba(255,255,255," + layer[1] + ")");
-            px.strokeStyle = fade;
-            px.lineWidth = mobile ? layer[0] * 0.7 : layer[0];
+        // Núcleo de alta intensidade do feixe (branco na entrada -> transição no cristal -> cor viva na saída)
+        [[3.6, 0.92, 66], [1.4, 0.98, 92]].forEach(function (core) {
+            var w = mobile ? core[0] * 0.78 : core[0], al = core[1], lt = core[2];
+            var cIn = px.createLinearGradient(O.x, O.y, E.x, E.y);
+            cIn.addColorStop(0, "rgba(255,255,255,0)");
+            cIn.addColorStop(mobile ? 0.2 : 0.6, "rgba(255,255,255," + (al * 0.4).toFixed(3) + ")");
+            cIn.addColorStop(1, "rgba(255,255,255," + al + ")");
+            px.strokeStyle = cIn; px.lineWidth = w;
             px.beginPath(); px.moveTo(O.x, O.y); px.lineTo(E.x, E.y); px.stroke();
-        });
-        [[E, 60, 0.55, null], [so, 56, 0.5, pick]].forEach(function (fl) {
-            var rg = px.createRadialGradient(fl[0].x, fl[0].y, 0, fl[0].x, fl[0].y, fl[1]);
-            rg.addColorStop(0, fl[3] === null ? "rgba(255,255,255," + fl[2] + ")" : hue(fl[3], fl[2], 70)); rg.addColorStop(1, "rgba(255,255,255,0)");
-            px.fillStyle = rg; px.beginPath(); px.arc(fl[0].x, fl[0].y, fl[1], 0, 6.283); px.fill();
+
+            var cMid = px.createLinearGradient(E.x, E.y, so.x, so.y);
+            cMid.addColorStop(0, "rgba(255,255,255," + (al * 0.85).toFixed(3) + ")");
+            cMid.addColorStop(0.5, hue(pick, al * 0.65, 84));
+            cMid.addColorStop(1, hue(pick, al * 0.95, lt));
+            px.strokeStyle = cMid; px.lineWidth = w * 0.9;
+            px.beginPath(); px.moveTo(E.x, E.y); px.lineTo(so.x, so.y); px.stroke();
+
+            var cOut = px.createLinearGradient(so.x, so.y, se.x, se.y);
+            cOut.addColorStop(0, hue(pick, al, Math.min(98, lt + 5)));
+            cOut.addColorStop(0.7, hue(pick, al, lt));
+            cOut.addColorStop(1, hue(pick, 0, lt));
+            px.strokeStyle = cOut; px.lineWidth = w;
+            px.beginPath(); px.moveTo(so.x, so.y); px.lineTo(se.x, se.y); px.stroke();
         });
 
-        // o vidro: corpo, chanfro interno e arestas iluminadas
+        // 5. Iluminação óptica nos pontos de refração E e so (bloom suave + reflexo na aresta do vidro)
+        function drawRefractionBloom(pt, rOuter, colorPick) {
+            var rg = px.createRadialGradient(pt.x, pt.y, 0, pt.x, pt.y, rOuter);
+            if (colorPick === null) {
+                rg.addColorStop(0, "rgba(255,255,255,0.92)");
+                rg.addColorStop(0.08, "rgba(255,255,255,0.52)");
+                rg.addColorStop(0.22, "rgba(255,255,255,0.20)");
+                rg.addColorStop(0.45, "rgba(255,255,255,0.055)");
+                rg.addColorStop(0.72, "rgba(255,255,255,0.012)");
+                rg.addColorStop(1, "rgba(255,255,255,0)");
+            } else {
+                rg.addColorStop(0, "rgba(255,255,255,0.96)");
+                rg.addColorStop(0.08, hue(colorPick, 0.68, 84));
+                rg.addColorStop(0.22, hue(colorPick, 0.28, 70));
+                rg.addColorStop(0.45, hue(colorPick, 0.08, 64));
+                rg.addColorStop(0.72, hue(colorPick, 0.018, 60));
+                rg.addColorStop(1, "rgba(255,255,255,0)");
+            }
+            px.fillStyle = rg;
+            px.beginPath(); px.arc(pt.x, pt.y, rOuter, 0, 6.283); px.fill();
+        }
+        drawRefractionBloom(E, mobile ? 54 : 76, null);
+        drawRefractionBloom(so, mobile ? 60 : 86, pick);
+
+        // 6. Arestas do prisma e chanfro interno sutil iluminados pela passagem da luz
         px.globalCompositeOperation = "source-over";
-        var mid = { x: (B.x + C.x) / 2, y: (B.y + C.y) / 2 };
-        var glass = px.createLinearGradient(A.x, A.y, mid.x, mid.y);
-        glass.addColorStop(0, "rgba(255,255,255,0.14)");
-        glass.addColorStop(0.6, "rgba(255,255,255,0.04)");
-        glass.addColorStop(1, "rgba(255,255,255,0.09)");
-        px.fillStyle = glass;
-        px.beginPath(); px.moveTo(A.x, A.y); px.lineTo(B.x, B.y); px.lineTo(C.x, C.y); px.closePath(); px.fill();
-        px.lineJoin = "round";
-        px.strokeStyle = "rgba(255,255,255,0.55)"; px.lineWidth = 1.2; px.stroke();
         var cen = { x: (A.x + B.x + C.x) / 3, y: (A.y + B.y + C.y) / 3 };
         var a2 = lerp(cen, A, 0.84), b2 = lerp(cen, B, 0.84), c2 = lerp(cen, C, 0.84);
         px.strokeStyle = "rgba(255,255,255,0.12)"; px.lineWidth = 1;
         px.beginPath(); px.moveTo(a2.x, a2.y); px.lineTo(b2.x, b2.y); px.lineTo(c2.x, c2.y); px.closePath(); px.stroke();
         [[A, a2], [B, b2], [C, c2]].forEach(function (pr) { px.beginPath(); px.moveTo(pr[0].x, pr[0].y); px.lineTo(pr[1].x, pr[1].y); px.stroke(); });
-        var edge = px.createLinearGradient(C.x, C.y, A.x, A.y);
-        edge.addColorStop(0, "rgba(255,255,255,0.15)");
-        edge.addColorStop(Math.max(0, Math.min(1, 0.5 - tilt * 0.12)), "rgba(255,255,255,0.95)");
-        edge.addColorStop(1, "rgba(255,255,255,0.3)");
-        px.strokeStyle = edge; px.lineWidth = 1.8;
-        px.beginPath(); px.moveTo(C.x, C.y); px.lineTo(A.x, A.y); px.stroke();
-        var edgeR = px.createLinearGradient(A.x, A.y, B.x, B.y);
-        edgeR.addColorStop(0, "rgba(255,255,255,0.25)");
-        edgeR.addColorStop(Math.max(0, Math.min(1, xk + (pick - 0.5) * 0.05)), hue(pick, 0.95, 75));
-        edgeR.addColorStop(1, "rgba(255,255,255,0.2)");
-        px.strokeStyle = edgeR; px.beginPath(); px.moveTo(A.x, A.y); px.lineTo(B.x, B.y); px.stroke();
 
-        // poeira no ar: apagada no escuro, acesa dentro da luz
+        px.strokeStyle = "rgba(255,255,255,0.48)"; px.lineWidth = 1.2;
+        px.beginPath(); px.moveTo(A.x, A.y); px.lineTo(B.x, B.y); px.lineTo(C.x, C.y); px.closePath(); px.stroke();
+
+        var hitL = Math.max(0.08, Math.min(0.92, 0.5 - tilt * 0.12));
+        var edgeL = px.createLinearGradient(C.x, C.y, A.x, A.y);
+        edgeL.addColorStop(0, "rgba(255,255,255,0.16)");
+        edgeL.addColorStop(Math.max(0, hitL - 0.22), "rgba(255,255,255,0.32)");
+        edgeL.addColorStop(hitL, "rgba(255,255,255,0.98)");
+        edgeL.addColorStop(Math.min(1, hitL + 0.22), "rgba(255,255,255,0.32)");
+        edgeL.addColorStop(1, "rgba(255,255,255,0.22)");
+        px.strokeStyle = edgeL; px.lineWidth = 1.8;
+        px.beginPath(); px.moveTo(C.x, C.y); px.lineTo(A.x, A.y); px.stroke();
+
+        var hitR = Math.max(0.08, Math.min(0.92, xk + (pick - 0.5) * 0.13));
+        var edgeR = px.createLinearGradient(A.x, A.y, B.x, B.y);
+        edgeR.addColorStop(0, "rgba(255,255,255,0.22)");
+        edgeR.addColorStop(Math.max(0, hitR - 0.22), hue(pick, 0.42, 72));
+        edgeR.addColorStop(hitR, hue(pick, 0.98, 84));
+        edgeR.addColorStop(Math.min(1, hitR + 0.22), hue(pick, 0.42, 72));
+        edgeR.addColorStop(1, "rgba(255,255,255,0.18)");
+        px.strokeStyle = edgeR;
+        px.beginPath(); px.moveTo(A.x, A.y); px.lineTo(B.x, B.y); px.stroke();
+
         px.globalCompositeOperation = "lighter";
         for (var m = 0; m < motes.length; m++) {
             var d = motes[m];
@@ -370,20 +517,32 @@
     var prismRunning = false;
     function prismLoop() {
         clock += 0.016;
-        if (!picked) { aim = 0.5 + 0.46 * Math.sin(clock * 0.16); aimX = 0.5 + 0.25 * Math.sin(clock * 0.27); }
+        if (!picked) { aim = 0.5 + 0.46 * Math.sin(clock * 0.16 + 0.45); aimX = 0.5 + 0.25 * Math.sin(clock * 0.27); }
         else if (clock - lastMove > 2.5) { aimX = 0.5 + 0.2 * Math.sin(clock * 0.27); }
         cur += (aim - cur) * 0.06;
         curX += (aimX - curX) * 0.05;
         drawPrism(true);
         if (prismRunning) requestAnimationFrame(prismLoop);
     }
-    try { var savedHue = parseFloat(localStorage.getItem("pn3-hue")); if (savedHue >= 0 && savedHue <= 1) { aim = cur = savedHue; picked = true; } } catch (e) {}
+    try {
+        var savedHue = parseFloat(localStorage.getItem("pn3-hue"));
+        if (savedHue >= 0 && savedHue <= 1) { aim = cur = savedHue; picked = true; }
+    } catch (e) {}
     sizePrism(); drawPrism(false);
     var hero = $(".hero");
     function point(e) {
+        if (window.scrollY > 20) return;
+        if (e.target && e.target.closest && e.target.closest(".ctas")) return;
         var r = hero.getBoundingClientRect();
-        aim = Math.max(0, Math.min(1, (e.clientY - r.top) / r.height));
-        aimX = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width));
+        var nx = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width));
+        var ny = (e.clientY - r.top) / r.height;
+        var dy = prevY === null ? 0 : Math.abs(e.clientY - prevY);
+        prevY = e.clientY;
+        // Ignora as bordas de saída da Hero e movimentos bruscos de saída para não travar na cor da borda
+        if (e.type !== "pointerdown" && (ny < 0.14 || ny > 0.80 || dy > 26)) return;
+        var mappedY = Math.max(0, Math.min(1, (ny - 0.14) / 0.66));
+        aim = Math.max(0, Math.min(1, mappedY * 0.72 + nx * 0.28));
+        aimX = nx;
         lastMove = clock;
         picked = true;
     }
@@ -396,6 +555,7 @@
     function pointStatic(e) { point(e); if (reduce) { cur = aim; curX = aimX; drawPrism(false); } }
     hero.addEventListener("pointermove", pointStatic);
     hero.addEventListener("pointerdown", pointStatic);
+    hero.addEventListener("pointerleave", function () { prevY = null; });
     window.addEventListener("resize", function () { if (pc.clientWidth !== PW) { sizePrism(); drawPrism(false); } });
 
     /* Partículas no fundo do site: pontos que flutuam devagar, se afastam do cursor
@@ -442,12 +602,154 @@
     }
     window.addEventListener("resize", function () { if (innerWidth !== DW) sizeDust(); else DH = innerHeight; drawDust(false); });
 
-    // Revelação ao rolar (o conteúdo já está visível em repouso)
-    if ("IntersectionObserver" in window) {
-        var io = new IntersectionObserver(function (entries) {
-            entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
-        }, { threshold: 0.2 });
-        $$(".reveal").forEach(function (el) { io.observe(el); });
+    // Ajuste exato do nome no rodapé para nunca cortar em nenhuma tela
+    var footName = $(".foot-name"), footSpan = $(".foot-name span");
+    function fitFootName() {
+        if (!footName || !footSpan) return;
+        var maxW = footName.clientWidth;
+        if (maxW <= 0) return;
+        footSpan.style.fontSize = "100px";
+        var textW = footSpan.offsetWidth;
+        if (textW > 0) {
+            footSpan.style.fontSize = Math.floor(100 * (maxW / textW) * 0.992) + "px";
+        }
+    }
+    window.addEventListener("resize", fitFootName, { passive: true });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitFootName);
+
+    /* ---------- Antigravity UI & Motion Engine (GSAP + ScrollTrigger + 3D CSS) ---------- */
+    function initTilt() {
+        if (reduce || !window.gsap || window.matchMedia("(hover: none)").matches) return;
+        $$("[data-tilt]").forEach(function (card) {
+            if (card._tiltInit) return;
+            card._tiltInit = true;
+            var isFeature = card.classList.contains("feature");
+            var maxRot = isFeature ? 1.4 : 2.6;
+            var lift = isFeature ? -2 : -3;
+            var rx = window.gsap.quickTo(card, "rotationX", { duration: 0.45, ease: "power3.out" });
+            var ry = window.gsap.quickTo(card, "rotationY", { duration: 0.45, ease: "power3.out" });
+            var ty = window.gsap.quickTo(card, "y", { duration: 0.45, ease: "power3.out" });
+            window.gsap.set(card, { transformPerspective: 1100 });
+            card.addEventListener("pointerenter", function () {
+                card.style.willChange = "transform";
+                ty(lift);
+            }, { passive: true });
+            card.addEventListener("pointermove", function (e) {
+                var r = card.getBoundingClientRect();
+                var px = (e.clientX - r.left) / r.width - 0.5;
+                var py = (e.clientY - r.top) / r.height - 0.5;
+                rx(-py * maxRot * 2);
+                ry(px * maxRot * 2);
+            }, { passive: true });
+            card.addEventListener("pointerleave", function () {
+                rx(0); ry(0); ty(0);
+                setTimeout(function () { card.style.willChange = ""; }, 500);
+            }, { passive: true });
+        });
+    }
+
+    function initMotion() {
+        if (reduce || !window.gsap) return;
+        var gsap = window.gsap;
+        if (window.ScrollTrigger) gsap.registerPlugin(window.ScrollTrigger);
+
+        // Entrada espacial 3D da Hero
+        var heroItems = $$(".hero-item");
+        gsap.fromTo(heroItems,
+            { y: 32, rotationX: 14, z: -24, opacity: 0, transformPerspective: 1000 },
+            { y: 0, rotationX: 0, z: 0, opacity: 1, duration: 0.9, stagger: 0.1, ease: "power3.out",
+              onStart: function () { heroItems.forEach(function (el) { el.style.willChange = "transform, opacity"; }); },
+              onComplete: function () { heroItems.forEach(function (el) { el.style.willChange = ""; }); }
+            }
+        );
+
+        if (!window.ScrollTrigger) return;
+
+        // Helper para entradas 3D escalonadas com gerenciamento limpo de will-change
+        function scrollFloat(targets, triggerEl, opts) {
+            var list = typeof targets === "string" ? $$(targets) : targets;
+            if (!list || !list.length) return;
+            var cfg = opts || {};
+            gsap.fromTo(list,
+                { y: cfg.y || 38, rotationX: cfg.rotX !== undefined ? cfg.rotX : 12, z: cfg.z || -20, opacity: 0, transformPerspective: 1100 },
+                {
+                    y: 0, rotationX: 0, z: 0, opacity: 1,
+                    duration: cfg.dur || 0.85,
+                    stagger: cfg.stagger !== undefined ? cfg.stagger : 0.1,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: triggerEl || list[0],
+                        start: cfg.start || "top 86%",
+                         toggleActions: "play none none none",
+                        once: true
+                    },
+                    onStart: function () { list.forEach(function (el) { el.style.willChange = "transform, opacity"; }); },
+                    onComplete: function () { list.forEach(function (el) { el.style.willChange = ""; }); }
+                }
+            );
+        }
+
+        // Cabeçalhos das seções
+        $$(".sec-head").forEach(function (head) {
+            scrollFloat($$(".kicker, .title, .sub", head), head, { y: 28, rotX: 10, stagger: 0.09 });
+        });
+
+        // Quem sou: parágrafos, cards 01-04 em dominó (0.1s) e faixa de ferramentas
+        scrollFloat("#sobre .about-text p", "#sobre .about-grid", { y: 32, rotX: 10, stagger: 0.1 });
+        scrollFloat("#sobre .rays-row li", "#sobre .rays-row", { y: 44, rotX: 16, z: -30, stagger: 0.1 });
+        scrollFloat(["#sobre .tools-band"], "#sobre .tools-band", { y: 30, rotX: 8, stagger: 0 });
+        scrollFloat("#sobre .stack li", "#sobre .tools-band", { y: 18, rotX: 0, z: 0, dur: 0.6, stagger: 0.04 });
+
+        // Experiência: itens da timeline em cascata 0.1s
+        scrollFloat("#timeline .job", "#timeline", { y: 30, rotX: 8, stagger: 0.1 });
+
+        // Formação: Bacharelado, cursos técnicos e certificações em dominó
+        scrollFloat(["#formacao .degree", "#formacao .course"].reduce(function (a, s) { return a.concat($$(s)); }, []), "#formacao .edu-top", { y: 42, rotX: 14, z: -24, stagger: 0.1 });
+        scrollFloat("#formacao .cert-list li", "#formacao .edu-bottom", { y: 22, rotX: 6, stagger: 0.08 });
+
+        // Projetos: palco AgentDeck + perspectiva 3D isométrica ao rolar na imagem .shot
+        scrollFloat(["#projetos .feature"], "#projetos .projects", { y: 46, rotX: 10, z: -30, stagger: 0 });
+        var shot = $("#projetos .shot");
+        if (shot) {
+            gsap.fromTo(shot,
+                { rotationX: 18, rotationY: -7, rotationZ: 1.5, y: 44, scale: 0.94, transformPerspective: 1400 },
+                {
+                    rotationX: 0, rotationY: 0, rotationZ: 0, y: 0, scale: 1,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#projetos .feature",
+                        start: "top 85%",
+                        end: "center 52%",
+                        scrub: 0.7
+                    }
+                }
+            );
+        }
+
+        // Contato: links e formulário de vidro
+        scrollFloat("#contato .contact-list > *", "#contato .contact-grid", { y: 26, rotX: 8, stagger: 0.1 });
+        scrollFloat(["#contato .form-glass"], "#contato .form-wrap", { y: 36, rotX: 12, stagger: 0 });
+
+        // Parallax em múltiplas camadas (fundo mais lento que o primeiro plano)
+        gsap.to("#prism", {
+            yPercent: 15,
+            ease: "none",
+            scrollTrigger: { trigger: "#inicio", start: "top top", end: "bottom top", scrub: true }
+        });
+        gsap.to("#contato .stars", {
+            yPercent: -14,
+            ease: "none",
+            scrollTrigger: { trigger: "#contato", start: "top bottom", end: "bottom top", scrub: true }
+        });
+        gsap.fromTo(".foot-name",
+            { y: 36, opacity: 0.35 },
+            {
+                y: 0, opacity: 1, ease: "none",
+                scrollTrigger: { trigger: ".footer", start: "top 92%", end: "bottom bottom", scrub: 0.6 }
+            }
+        );
+
+        initTilt();
     }
 
     // Link ativo na navegação
@@ -458,7 +760,6 @@
         links.forEach(function (a) { var on = a.getAttribute("href") === "#" + current; a.classList.toggle("is-active", on); on ? a.setAttribute("aria-current", "location") : a.removeAttribute("aria-current"); });
     }
     window.addEventListener("scroll", markActive, { passive: true });
-    markActive();
 
     // Paleta de comandos (Ctrl+K, / ou o botão de busca)
     if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) $("#kbd-hint").textContent = "⌘K";
@@ -613,4 +914,7 @@
     if (start !== "en" && start !== "pt") { try { start = localStorage.getItem("pn3-lang"); } catch (e) {} }
     if (start !== "en" && start !== "pt") start = /^pt\b/i.test(navigator.language || "pt") ? "pt" : "en";
     apply(start);
+    initMotion();
+    markActive();
+    fitFootName();
 })();
