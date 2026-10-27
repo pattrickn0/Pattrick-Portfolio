@@ -2,7 +2,7 @@
 (function () {
     "use strict";
     var ICONS = [{"name": "Java", "src": "./assets/icons/tech/plain/java.svg"}, {"name": "C#", "src": "./assets/icons/tech/plain/csharp.svg"}, {"name": "SQL \u00b7 MySQL", "src": "./assets/icons/tech/plain/mysql.svg"}, {"name": "HTML", "src": "./assets/icons/tech/plain/html5.svg"}, {"name": "CSS", "src": "./assets/icons/tech/plain/css3.svg"}, {"name": "JavaScript", "src": "./assets/icons/tech/plain/javascript.svg"}, {"name": "Git", "src": "./assets/icons/tech/plain/git.svg"}, {"name": "ServiceNow", "sym": "i-ticket"}, {"name": "Power Apps", "sym": "i-phone"}, {"name": "Power BI", "sym": "i-chart", "learning": true}];
-    var PROJECTS = [{"feature": true, "name": "AgentDeck", "kind": {"pt": "Projeto atual · open source · feito com IA", "en": "Current project · open source · built with AI"}, "status": "oss", "desc": {"pt": "Um terminal desktop onde agentes de IA trabalham em equipe. Claude Code, Codex, Antigravity e OpenCode rodam lado a lado em abas de terminal reais, conversam entre si com o ask-agent e recebem tarefas isoladas em git worktrees, que você revisa e mescla. Estou construindo o AgentDeck com os próprios agentes de IA (vibe coding): eu defino o problema, o fluxo e reviso o resultado.", "en": "A desktop terminal where AI agents work as a team. Claude Code, Codex, Antigravity and OpenCode run side by side in real terminal tabs, talk to each other through ask-agent and get isolated tasks in git worktrees that you review and merge. I'm building AgentDeck with the AI agents themselves (vibe coding): I define the problem and the workflow, and I review the result."}, "tags": [{"pt": "Feito com IA", "en": "Built with AI"}, "Rust", "Git worktrees", "Windows · Linux", {"pt": "Licença MIT", "en": "MIT license"}], "href": "https://github.com/pattrickn0/AgentDeck", "shot": true}];
+    var PROJECTS = [{"feature": true, "name": "AgentDeck", "kind": {"pt": "Projeto atual · open source · feito com IA", "en": "Current project · open source · built with AI"}, "status": "oss", "desc": {"pt": "Um terminal desktop onde agentes de IA trabalham em equipe. Claude Code, Codex, Antigravity e OpenCode rodam lado a lado em abas de terminal reais, conversam entre si com o ask-agent e recebem tarefas isoladas em git worktrees, que você revisa e mescla. Estou construindo o AgentDeck com os próprios agentes de IA (vibe coding): eu idealizo as funcionalidades e os fluxos, a IA implementa e eu testo cada entrega.", "en": "A desktop terminal where AI agents work as a team. Claude Code, Codex, Antigravity and OpenCode run side by side in real terminal tabs, talk to each other through ask-agent and get isolated tasks in git worktrees that you review and merge. I'm building AgentDeck with the AI agents themselves (vibe coding): I design the features and workflows, the AI implements them, and I test every delivery."}, "tags": [{"pt": "Feito com IA", "en": "Built with AI"}, "Rust", "Git worktrees", "Windows · Linux", {"pt": "Licença MIT", "en": "MIT license"}], "href": "https://github.com/pattrickn0/AgentDeck", "shot": true}];
     var ENDPOINT = {"url": "https://api.web3forms.com/submit", "key": "f026d75a-6bb6-426e-abd1-c9342a2428f9"};
     var root = document.documentElement;
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -31,12 +31,12 @@
             "edu.kicker": "Education", "edu.title": "Always learning.",
             "edu.ongoing": "In progress", "edu.degree": "Bachelor's in Information Systems", "edu.done": "of the course timeline",
             "edu.tech": "Technical program", "edu.it": "IT Technician", "edu.adm": "Business Administration Technician",
-            "edu.certs": "Certifications",
+            "edu.certs": "Certifications", "edu.langs": "Languages", "edu.en": "English", "edu.enLevel": "advanced reading · basic conversation",
             "cert.net": "Networking", "cert.oop": "C# · OOP",
             "proj.kicker": "Projects", "proj.title": "What I'm building.",
             "contact.kicker": "Contact", "contact.title": "Let's talk?",
             "contact.sub": "Whether it's an opportunity, a project or a process that needs automating, reach out wherever you prefer.",
-            "contact.copy": "Copy", "contact.copied": "Copied", "contact.selected": "Selected · Ctrl+C",
+            "contact.copy": "Copy", "contact.copied": "Copied", "contact.selected": "Selected · Ctrl+C", "contact.loc": "Location",
             "f.name": "Name", "f.nameph": "Your name", "f.email": "Email", "f.emailph": "you@company.com",
             "f.topic": "Subject", "f.o1": "Job opportunity", "f.o2": "Project or automation", "f.o3": "Exchange ideas", "f.o4": "Other",
             "f.msg": "Message", "f.msgph": "Tell me a bit about what you have in mind", "f.send": "Send message",
@@ -485,7 +485,7 @@
                 if (navigator.clipboard) navigator.clipboard.writeText("pattrickn0@gmail.com").then(done, function () { palToast.textContent = "pattrickn0@gmail.com"; });
                 else palToast.textContent = "pattrickn0@gmail.com";
             } },
-            { group: t("pal.actions"), icon: "i-globe", label: t("pal.lang"), hint: lang === "en" ? "PT" : "EN", keys: "idioma language ingles english portugues", stay: true, run: function () { apply(lang === "en" ? "pt" : "en"); render(palInput.value); } }
+            { group: t("pal.actions"), icon: "i-globe", label: t("pal.lang"), hint: lang === "en" ? "PT" : "EN", keys: "idioma language trocar switch portugues", stay: true, run: function () { apply(lang === "en" ? "pt" : "en"); render(palInput.value); } }
         ];
         var links = [
             { group: t("pal.links"), icon: "i-in", label: "LinkedIn", hint: "in/pattrick-nunes", keys: "linkedin", href: "https://www.linkedin.com/in/pattrick-nunes" },

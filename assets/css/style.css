@@ -348,6 +348,7 @@ details[open] .plus { transform: rotate(45deg); background: var(--ink); color: v
 .label { font-family: var(--mono); font-size: var(--t-xs); color: var(--mute); }
 .edu-bottom { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); margin-top: clamp(40px, 6vw, 64px); }
 .cert-list { margin-top: 12px; border-top: 1px solid var(--line); }
+.lang-title { display: block; margin-top: 36px; }
 .cert-list li { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 14px 4px; border-bottom: 1px solid var(--line); }
 .cert-list .dot { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); }
 .cert-list .dot .icon { width: 16px; height: 16px; }
