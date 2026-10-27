@@ -1,8 +1,8 @@
 /* Pattrick Nunes · portfólio v3 */
 (function () {
     "use strict";
-    var ICONS = [{"name": "Rust", "src": "./assets/icons/tech/plain/rust.svg"}, {"name": "Java", "src": "./assets/icons/tech/plain/java.svg"}, {"name": "C#", "src": "./assets/icons/tech/plain/csharp.svg"}, {"name": "SQL \u00b7 MySQL", "src": "./assets/icons/tech/plain/mysql.svg"}, {"name": "Git", "src": "./assets/icons/tech/plain/git.svg"}, {"name": "ServiceNow", "sym": "i-ticket"}, {"name": "Power Apps", "sym": "i-phone"}, {"name": "HTML", "src": "./assets/icons/tech/plain/html5.svg", "learning": true}, {"name": "CSS", "src": "./assets/icons/tech/plain/css3.svg", "learning": true}, {"name": "React", "src": "./assets/icons/tech/plain/react.svg", "learning": true}];
-    var PROJECTS = [{"feature": true, "name": "AgentDeck", "kind": {"pt": "Projeto atual · open source", "en": "Current project · open source"}, "status": "oss", "desc": {"pt": "Um terminal desktop onde agentes de IA trabalham em equipe. Claude Code, Codex, Antigravity e OpenCode rodam lado a lado em abas de terminal reais, conversam entre si com o ask-agent e recebem tarefas isoladas em git worktrees, que você revisa e mescla. 100% em Rust, nativo para Windows e Linux.", "en": "A desktop terminal where AI agents work as a team. Claude Code, Codex, Antigravity and OpenCode run side by side in real terminal tabs, talk to each other through ask-agent and get isolated tasks in git worktrees that you review and merge. 100% Rust, native on Windows and Linux."}, "tags": ["Rust", "egui", "Git worktrees", "Windows · Linux", {"pt": "Licença MIT", "en": "MIT license"}], "href": "https://github.com/pattrickn0/AgentDeck", "shot": true}];
+    var ICONS = [{"name": "Java", "src": "./assets/icons/tech/plain/java.svg"}, {"name": "C#", "src": "./assets/icons/tech/plain/csharp.svg"}, {"name": "SQL \u00b7 MySQL", "src": "./assets/icons/tech/plain/mysql.svg"}, {"name": "Git", "src": "./assets/icons/tech/plain/git.svg"}, {"name": "ServiceNow", "sym": "i-ticket"}, {"name": "Power Apps", "sym": "i-phone"}, {"name": "HTML", "src": "./assets/icons/tech/plain/html5.svg", "learning": true}, {"name": "CSS", "src": "./assets/icons/tech/plain/css3.svg", "learning": true}, {"name": "JavaScript", "src": "./assets/icons/tech/plain/javascript.svg", "learning": true}];
+    var PROJECTS = [{"feature": true, "name": "AgentDeck", "kind": {"pt": "Projeto atual · open source · feito com IA", "en": "Current project · open source · built with AI"}, "status": "oss", "desc": {"pt": "Um terminal desktop onde agentes de IA trabalham em equipe. Claude Code, Codex, Antigravity e OpenCode rodam lado a lado em abas de terminal reais, conversam entre si com o ask-agent e recebem tarefas isoladas em git worktrees, que você revisa e mescla. Estou construindo o AgentDeck com os próprios agentes de IA (vibe coding): eu defino o problema, o fluxo e reviso o resultado.", "en": "A desktop terminal where AI agents work as a team. Claude Code, Codex, Antigravity and OpenCode run side by side in real terminal tabs, talk to each other through ask-agent and get isolated tasks in git worktrees that you review and merge. I'm building AgentDeck with the AI agents themselves (vibe coding): I define the problem and the workflow, and I review the result."}, "tags": [{"pt": "Feito com IA", "en": "Built with AI"}, "Rust", "Git worktrees", "Windows · Linux", {"pt": "Licença MIT", "en": "MIT license"}], "href": "https://github.com/pattrickn0/AgentDeck", "shot": true}];
     var ENDPOINT = {"url": "https://api.web3forms.com/submit", "key": "f026d75a-6bb6-426e-abd1-c9342a2428f9"};
     var root = document.documentElement;
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -20,12 +20,12 @@
             "hero.hint": "Move your cursor to pick the color of the light", "hero.hintTouch": "Tap to pick the color of the light",
             "about.kicker": "Who I am", "about.title": "One problem goes in. Many solutions come out.",
                         "about.p1": "I'm studying for a <strong>Bachelor's in Information Systems</strong> at IFF, with technical degrees in IT and in Business Administration.",
-            "about.p2": "I've assembled computers, deployed systems in stores, set up auditoriums for events and today I build automations at work. I also build my own tools, like <strong>AgentDeck</strong>.",
+            "about.p2": "I've assembled computers, deployed systems in stores, set up auditoriums for events and today I build automations at work. I also create my own tools with the help of AI agents, like <strong>AgentDeck</strong>.",
             "about.p3": "The common thread is the same: <strong>find the cause and leave the process better than I found it</strong>.",
             "about.sub": "Like the light in the prism up top: every problem that reaches me opens up into steps.",
             "ray1.t": "Investigate", "ray1.d": "Understand the cause before touching anything, whether it's hardware, software, network or process.",
             "ray2.t": "Automate", "ray2.d": "Whatever repeats becomes a process: dashboards, macros and low-code apps.",
-            "ray3.t": "Build", "ray3.d": "My own tools when the existing ones don't cut it, like AgentDeck.",
+            "ray3.t": "Build", "ray3.d": "My own tools when the existing ones don't cut it, built together with AI agents, like AgentDeck.",
             "ray4.t": "Teach", "ray4.d": "Train people so the solution works day to day.",
             "exp.kicker": "Experience", "exp.title": "Where I've been.", "exp.sub": "From audiovisual to deployments and automation. Open an experience to see the details.",
             "edu.kicker": "Education", "edu.title": "Always learning.",
@@ -490,7 +490,7 @@
         var links = [
             { group: t("pal.links"), icon: "i-in", label: "LinkedIn", hint: "in/pattrick-nunes", keys: "linkedin", href: "https://www.linkedin.com/in/pattrick-nunes" },
             { group: t("pal.links"), icon: "i-gh", label: "GitHub", hint: "pattrickn0", keys: "github codigo code", href: "https://github.com/pattrickn0" },
-            { group: t("pal.links"), icon: "i-box", label: t("pal.agentdeck"), hint: "github", keys: "agentdeck projeto project rust", href: "https://github.com/pattrickn0/AgentDeck" }
+            { group: t("pal.links"), icon: "i-box", label: t("pal.agentdeck"), hint: "github", keys: "agentdeck projeto project ia ai", href: "https://github.com/pattrickn0/AgentDeck" }
         ];
         return nav.concat(jobs, actions, links);
     }
